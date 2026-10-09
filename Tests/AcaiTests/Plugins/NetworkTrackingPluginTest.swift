@@ -192,7 +192,7 @@ final class NetworkTrackingPluginTest: XCTestCase {
         let events = eventCollector.events
         XCTAssertEqual(events.count, 2)
         let event = events[1] as! NetworkRequestEvent
-        XCTAssertEqual(event.eventProperties?[Constants.AMP_NETWORK_URL_PROPERTY] as! String, "https://api.acai.io/2/httpapi")
+        XCTAssertEqual(event.eventProperties?[Constants.AMP_NETWORK_URL_PROPERTY] as! String, "https://clickstream.acaiplatform.ai/api/collect")
     }
 
     func testNetworkTrackingOptionsIgnoreHosts() {

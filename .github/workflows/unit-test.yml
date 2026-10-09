@@ -1,0 +1,141 @@
+name: Unit Test
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_call:
+
+jobs:
+  unit-test:
+    name: Unit ${{ matrix.platform }} - Xcode ${{ matrix.xcode }} - OS ${{ matrix.test-destination-os }}
+    runs-on: ${{ matrix.runs-on }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - runs-on: macos-15
+            platform: iOS
+            xcode: 16.4
+            device: "iPhone 16"
+            test-destination-os: latest
+
+          - runs-on: macos-15
+            platform: iOS
+            xcode: 16.4
+            test-destination-os: 18.5
+            device: "iPhone 16"
+          
+          - runs-on: macos-15
+            platform: macOS
+            xcode: 16.4
+            test-destination-os: latest
+
+          - runs-on: macos-15
+            platform: tvOS
+            xcode: 16.4
+            test-destination-os: latest
+            device: "Apple TV"
+
+          - runs-on: macos-15
+            platform: watchOS
+            xcode: 16.4
+            test-destination-os: latest
+            device: "Apple Watch Series 10 (42mm)"
+
+          - runs-on: macos-15
+            platform: visionOS
+            xcode: 16.4
+            test-destination-os: 2.5
+            device: "Apple Vision Pro"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set Xcode ${{ matrix.xcode }}
+        run: |
+          sudo xcode-select -switch /Applications/Xcode_${{ matrix.xcode }}.app
+      - name: Install Apple platform SDKs
+        run: |
+          # Warm up CoreSimulator to avoid "Unable to connect to simulator":
+          # https://github.com/actions/runner-images/issues/12862#issuecomment-3239326872
+          xcrun simctl list > /dev/null
+          case "${{ matrix.platform }}" in
+            iOS)
+              sudo xcodebuild -downloadPlatform iOS
+              ;;
+            tvOS)
+              sudo xcodebuild -downloadPlatform tvOS
+              ;;
+            watchOS)
+              sudo xcodebuild -downloadPlatform watchOS
+              ;;
+            visionOS)
+              sudo xcodebuild -downloadPlatform visionOS
+              ;;
+          esac
+      - name: List Simulators
+        run: |
+          xcrun simctl list
+      - name: List Project Configuration
+        run: |
+          xcodebuild -list
+      - name: ${{ matrix.platform }} Tests
+        run: |
+          case "${{ matrix.platform }}" in
+            iOS)
+              xcodebuild test \
+                -scheme Acai-Swift-Package \
+                -sdk iphonesimulator \
+                -destination 'platform=iOS Simulator,OS=${{ matrix.test-destination-os }},name=${{ matrix.device }}'
+              ;;
+            macOS)
+              xcodebuild test \
+                -scheme Acai-Swift-Package \
+                -sdk macosx \
+                -destination 'platform=macOS'
+              ;;
+            tvOS)
+              xcodebuild \
+                -scheme Acai-Swift-Package \
+                -sdk appletvsimulator \
+                -destination 'platform=tvOS Simulator,OS=${{ matrix.test-destination-os }},name=${{ matrix.device }}' \
+                test
+              ;;
+            watchOS)
+              xcodebuild \
+                -scheme Acai-Swift-Package \
+                -sdk watchsimulator \
+                -destination 'platform=watchOS Simulator,OS=${{ matrix.test-destination-os }},name=${{ matrix.device }}' \
+                test
+              ;;
+            visionOS)
+              xcodebuild \
+                -scheme Acai-Swift-Package \
+                -sdk xrsimulator \
+                -destination 'platform=visionOS Simulator,OS=${{ matrix.test-destination-os }},name=${{ matrix.device }}' \
+                test
+              ;;
+          esac
+  objc-example-test:
+    runs-on: macos-15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set Xcode 16
+        run: |
+          sudo xcode-select -switch /Applications/Xcode_16.4.app
+      - name: Install Apple platform SDKs
+        run: |
+          # Warm up CoreSimulator to avoid "Unable to connect to simulator":
+          # https://github.com/actions/runner-images/issues/12862#issuecomment-3239326872
+          xcrun simctl list > /dev/null
+          sudo xcodebuild -downloadPlatform iOS
+      - name: Objective-C Example Tests (iOS)
+        working-directory: Examples/AcaiObjCExample
+        run: |
+          xcodebuild test \
+            -scheme AcaiObjCExample \
+            -sdk iphonesimulator \
+            -destination 'platform=iOS Simulator,OS=18.5,name=iPhone 16'

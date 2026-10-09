@@ -2,10 +2,10 @@ Pod::Spec.new do |s|
   s.name             = 'AcaiSwift'
   s.version          = '1.0.0'
   s.summary          = 'Acai iOS/tvOS/macOS/watchOS analytics SDK'
-  s.homepage         = 'https://github.com/your-org/Acai-Swift'
+  s.homepage         = 'https://github.com/Advaita-Intelligence/acai-swift'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Your Org' => 'sdk@your-org.com' }
-  s.source           = { :git => 'https://github.com/your-org/Acai-Swift.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Advaita-Intelligence/acai-swift.git', :tag => s.version.to_s }
   s.ios.deployment_target  = '13.0'
   s.tvos.deployment_target = '13.0'
   s.osx.deployment_target  = '10.15'

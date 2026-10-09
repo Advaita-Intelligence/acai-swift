@@ -79,10 +79,10 @@ public enum ObjCLogLevel: Int, Sendable {
 public struct Constants {
     static let SDK_LIBRARY = "acai-swift"
     static let SDK_VERSION = "1.17.3"
-    public static let DEFAULT_API_HOST = "https://api.acai.io/2/httpapi"
-    public static let EU_DEFAULT_API_HOST = "https://api.eu.acai.io/2/httpapi"
-    static let BATCH_API_HOST = "https://api.acai.io/batch"
-    static let EU_BATCH_API_HOST = "https://api.eu.acai.io/batch"
+    public static let DEFAULT_API_HOST = "https://clickstream.acaiplatform.ai/api/collect"
+    public static let EU_DEFAULT_API_HOST = "https://clickstream.acaiplatform.ai/api/collect"
+    static let BATCH_API_HOST = "https://clickstream.acaiplatform.ai/api/collect"
+    static let EU_BATCH_API_HOST = "https://clickstream.acaiplatform.ai/api/collect"
     static let IDENTIFY_EVENT = "$identify"
     static let GROUP_IDENTIFY_EVENT = "$groupidentify"
     static let MAX_PROPERTY_KEYS = 1024
