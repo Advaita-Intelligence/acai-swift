@@ -1,6 +1,6 @@
 # Acai-Swift
 
-Analytics SDK for iOS, tvOS, macOS and watchOS. It sends clickstream events to the Acai capture endpoint, authenticated with your project API key. Based on [Amplitude-Swift](https://github.com/amplitude/Amplitude-Swift) (MIT).
+Analytics SDK for iOS, tvOS, macOS and watchOS. It sends clickstream events to the Acai capture endpoint, authenticated with your project API key. 
 
 - [Requirements](#requirements)
 - [Installation](#installation)
