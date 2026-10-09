@@ -1,6 +1,6 @@
 # Acai-Swift
 
-Native iOS/tvOS/macOS/watchOS analytics SDK — a fork of Acai-Swift rebranded for Acai.
+Native iOS/tvOS/macOS/watchOS analytics SDK 
 
 ## Installation
 
