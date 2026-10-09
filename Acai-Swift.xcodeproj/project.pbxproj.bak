@@ -1,0 +1,1495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E281B8C2B967F19009D913B /* Diagonostics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E281B8B2B967F19009D913B /* Diagonostics.swift */; };
+		3E281B8E2B96833D009D913B /* DiagnosticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E281B8D2B96833D009D913B /* DiagnosticsTests.swift */; };
+		3E281B912B9BCC14009D913B /* DispatchQueueHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E281B902B9BCC14009D913B /* DispatchQueueHolder.swift */; };
+		4E05BB942BE41AEB009DE475 /* Acai+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E05BB932BE41AEB009DE475 /* Acai+Extensions.swift */; };
+		4E27E4162DC1443F00799F24 /* AutocaptureRemoteConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E27E4152DC1443800799F24 /* AutocaptureRemoteConfigTests.swift */; };
+		4E2B646B2BA127460010E6F8 /* UIKitScreenViewsPluginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B646A2BA127460010E6F8 /* UIKitScreenViewsPluginTests.swift */; };
+		4E3871622BB34DBC002890AB /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = B6DF481F2B5B45BE00B3E6AA /* PrivacyInfo.xcprivacy */; };
+		4E5F89452F2AB9B60015FBC6 /* Data+Gzip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F89442F2AB9A60015FBC6 /* Data+Gzip.swift */; };
+		4E654D682D97454900BCAA85 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E654D672D97454900BCAA85 /* Identity.swift */; };
+		4E654DE12D9B60E700BCAA85 /* IdentityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E654DE02D9B60E300BCAA85 /* IdentityTests.swift */; };
+		4EB530752CD2E46A00E961F4 /* AnalyticsConnectorFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 4EB530742CD2E46A00E961F4 /* AnalyticsConnectorFramework */; };
+		4ED02BB82F299298001AE863 /* Data+Gzip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED02BB72F299280001AE863 /* Data+Gzip.swift */; };
+		4ED02BB92F299298001AE863 /* Data+Gzip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED02BB72F299280001AE863 /* Data+Gzip.swift */; };
+		4ED02BBB2F29958D001AE863 /* GzipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED02BBA2F299583001AE863 /* GzipTests.swift */; };
+		6C04FC3F2C58973C00EA8667 /* ElementInteractionEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C04FC3E2C58973C00EA8667 /* ElementInteractionEvent.swift */; };
+		6C04FC412C58974A00EA8667 /* UIKitElementInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C04FC402C58974A00EA8667 /* UIKitElementInteractions.swift */; };
+		6C04FC432C58976800EA8667 /* ObjCAutocaptureOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C04FC422C58976800EA8667 /* ObjCAutocaptureOptions.swift */; };
+		6C04FC452C58978900EA8667 /* AutocaptureOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C04FC442C58978900EA8667 /* AutocaptureOptions.swift */; };
+		6C04FC482C589C8100EA8667 /* AutocaptureOptionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C04FC462C5897AC00EA8667 /* AutocaptureOptionsTests.swift */; };
+		6C23EF162C38AD31000DC8C8 /* UIKitUserInteractionPluginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C23EF142C38AC32000DC8C8 /* UIKitUserInteractionPluginTest.swift */; };
+		8EDEC02B99EE2092B567A61D /* ObjCIngestionMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC500EBDA8B813056E2DB /* ObjCIngestionMetadata.swift */; };
+		8EDEC1073A308B12B5CCD975 /* AnalyticsConnectorPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDECD39BAA97DD4320C0AA5 /* AnalyticsConnectorPlugin.swift */; };
+		8EDEC10C56FA7F7DEEB48B6F /* ObjCBaseEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDECCFD935A0C5A6FE85E87 /* ObjCBaseEvent.swift */; };
+		8EDEC14255F82E24CEE00B36 /* AcaiSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC0630C3B587334275D9B /* AcaiSessionTests.swift */; };
+		8EDEC2155081F99515DF9C82 /* ObjCProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC18449A3E12FCADAD756 /* ObjCProperties.swift */; };
+		8EDEC2E0CC80DF79F5463ACC /* RemnantDataMigrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC6A9899998F823C278F7 /* RemnantDataMigrationTests.swift */; };
+		8EDEC30C0075E9D92B1B5210 /* UIKitScreenViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC650EF79B104DC3C9F4C /* UIKitScreenViews.swift */; };
+		8EDEC3283B812D5D34DADF7B /* AnalyticsConnectorIdentityPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC48916EFEF6D5B3EEF9A /* AnalyticsConnectorIdentityPlugin.swift */; };
+		8EDEC43520B2DCF584F1035D /* ObjCScreenViewedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC7D924907683D0A14CA6 /* ObjCScreenViewedEvent.swift */; };
+		8EDEC43FB30802F70112E577 /* ScreenViewedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDECB455E34133AB256D720 /* ScreenViewedEvent.swift */; };
+		8EDEC4D0C0CE07BF211804CC /* DefaultTrackingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC17A6A0F8112A5DC8CEB /* DefaultTrackingOptions.swift */; };
+		8EDEC4EE0DE1C89889F451B5 /* QueueTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC4F83BFAA664749FAEF0 /* QueueTimeTests.swift */; };
+		8EDEC51F746CC25D27E32F6A /* DeepLinkOpenedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDECC405793463C10F52EF2 /* DeepLinkOpenedEvent.swift */; };
+		8EDEC5F7208B1C327C8703D7 /* ObjCStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDECF8CF745F7339B65D6DB /* ObjCStorage.swift */; };
+		8EDEC74C71FEC9056DC7358F /* ObjCLoggerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDECD4B7ED7CBCD6955D097 /* ObjCLoggerProvider.swift */; };
+		8EDEC8F8DD2CDCD6568512F8 /* RemnantDataMigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC19F9FBC98A0D4E5A513 /* RemnantDataMigration.swift */; };
+		8EDEC972AEB33E4528F7FEEB /* StoragePrefixMigrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC9B98272069D70D08EA4 /* StoragePrefixMigrationTests.swift */; };
+		8EDEC977C03AA2676724F436 /* BasePlugins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC448C42C8C0A464FAA15 /* BasePlugins.swift */; };
+		8EDEC98799DCB6610B8DBA19 /* ObjCAcai.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC1576C95A2EB2FEF00A8 /* ObjCAcai.swift */; };
+		8EDECA4DAFA67CD4785D0161 /* ObjCDefaultTrackingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC44D23EBD92D7892628E /* ObjCDefaultTrackingOptions.swift */; };
+		8EDECB800546E37719391E65 /* ObjCPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDECB1FA2AFF022A19104EE /* ObjCPlan.swift */; };
+		8EDECBA91C61037025B85EFA /* ObjCRevenue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDECB730131FFFBE11EF9FF /* ObjCRevenue.swift */; };
+		8EDECC1FC97DDF0BEFAA96E7 /* ObjCDeepLinkOpenedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDECD6CF59CA94D5D0256CD /* ObjCDeepLinkOpenedEvent.swift */; };
+		8EDECD1E851511887BE000F9 /* ObjCEventOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDECE07F682FAAE47F77B24 /* ObjCEventOptions.swift */; };
+		8EDECD602E181B3E2E85D4DF /* StoragePrefixMigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDECC2335BCF4C2EC3A6206 /* StoragePrefixMigration.swift */; };
+		8EDECDF8E188CD7F24EEB475 /* ObjCTrackingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC48D9C242C1A39AABCC4 /* ObjCTrackingOptions.swift */; };
+		8EDECE3AA54253BA167E89CB /* ObjCPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC1160D95DC3F0E48DDF7 /* ObjCPlugin.swift */; };
+		8EDECEC5F98F9974DF3E576F /* ObjCIdentify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC5A50E197C9C5067C19E /* ObjCIdentify.swift */; };
+		8EDECF81C2B1B38D472FD7EF /* ObjCConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDECEC5AAE15FD05E76359A /* ObjCConfiguration.swift */; };
+		8EDECFCCF4219767F26210D6 /* Sessions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC2B8B38E04CDB51F0E83 /* Sessions.swift */; };
+		B605396A2BB767390027FC24 /* DefaultEventUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60539692BB767390027FC24 /* DefaultEventUtils.swift */; };
+		B6CCC6CD2B6B14510004B203 /* ObjCNetworkConnectivityCheckerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CCC6CC2B6B14510004B203 /* ObjCNetworkConnectivityCheckerPlugin.swift */; };
+		B6EDB4D02B643C8400454B90 /* NetworkConnectivityCheckerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EDB4CF2B643C8400454B90 /* NetworkConnectivityCheckerPlugin.swift */; };
+		B6F338A32B685793006179E2 /* NetworkConnectivityCheckerPluginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F338A22B685793006179E2 /* NetworkConnectivityCheckerPluginTests.swift */; };
+		BA0359CA2A51585D007C383B /* legacy_v3.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = BA0359C92A51585D007C383B /* legacy_v3.sqlite */; };
+		BA0639F62A4DD491000F1CEE /* LegacyDatabaseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0639F52A4DD491000F1CEE /* LegacyDatabaseStorage.swift */; };
+		BA1EC0F62A9F63FD00C2D547 /* AcaiIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1EC0F52A9F63FD00C2D547 /* AcaiIOSTests.swift */; };
+		BA994B9A2A4F48DE00D0913F /* LegacyDatabaseStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA994B992A4F48DE00D0913F /* LegacyDatabaseStorageTests.swift */; };
+		BA994B9D2A4F4FCB00D0913F /* legacy_v4.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = BA994B9B2A4F4B7500D0913F /* legacy_v4.sqlite */; };
+		BA9BEA4B299FB43B00BC0F7C /* IdentifyInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9BEA4A299FB43B00BC0F7C /* IdentifyInterceptor.swift */; };
+		BA9BEA4D299FB4BB00BC0F7C /* IdentifyInterceptorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9BEA4C299FB4BB00BC0F7C /* IdentifyInterceptorTests.swift */; };
+		D010435F2B6C59EE00F8173C /* SandboxHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D010435E2B6C59EE00F8173C /* SandboxHelper.swift */; };
+		D01043612B6C5A8500F8173C /* SandboxHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01043602B6C5A8500F8173C /* SandboxHelperTests.swift */; };
+		EA1F2CD92D8781950096A576 /* MethodSwizzlerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1F2CD82D8781950096A576 /* MethodSwizzlerTest.swift */; };
+		EA28FDA42DED997900848BBB /* InteractionsOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA28FDA32DED997900848BBB /* InteractionsOptions.swift */; };
+		EA2FD8862EE8A0E4002AB27E /* AmplitudeCoreFramework in Frameworks */ = {isa = PBXBuildFile; productRef = EA2FD8852EE8A0E4002AB27E /* AmplitudeCoreFramework */; };
+		EA2FD8882EE8A0EB002AB27E /* AmplitudeCoreNoUIKitFramework in Frameworks */ = {isa = PBXBuildFile; productRef = EA2FD8872EE8A0EB002AB27E /* AmplitudeCoreNoUIKitFramework */; };
+		EA2FD8932EECDD6F002AB27E /* AutocaptureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2FD8922EECDD6F002AB27E /* AutocaptureManager.swift */; };
+		EA2FD8942EECDD6F002AB27E /* AutocaptureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2FD8922EECDD6F002AB27E /* AutocaptureManager.swift */; };
+		EA5C95942D7A76B900DC8B3B /* NetworkSwizzler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5C95932D7A76B000DC8B3B /* NetworkSwizzler.swift */; };
+		EA5C95962D7A776D00DC8B3B /* MethodSwizzler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5C95952D7A776200DC8B3B /* MethodSwizzler.swift */; };
+		EA84CF0B2DF8D8E400CD1CAD /* MiscellaneousExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA84CF0A2DF8D8E400CD1CAD /* MiscellaneousExtension.swift */; };
+		EA8DA4BF2D91C101003B00F0 /* NetworkTrackingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8DA4BE2D91C101003B00F0 /* NetworkTrackingPlugin.swift */; };
+		EA8DA4C12D91C131003B00F0 /* NetworkRequestEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8DA4C02D91C131003B00F0 /* NetworkRequestEvent.swift */; };
+		EA9D50F92E7342BD0037E925 /* NetworkTrackingPlugin+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D50F82E7342AE0037E925 /* NetworkTrackingPlugin+Extensions.swift */; };
+		EAE4C5FA2E5F76A400FCD6E4 /* ObjectFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE4C5F92E5F769D00FCD6E4 /* ObjectFilter.swift */; };
+		EAE4C5FC2E5FA0C700FCD6E4 /* ObjectFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE4C5FB2E5FA0C100FCD6E4 /* ObjectFilterTests.swift */; };
+		EAE891872DA83B6F00AB97D0 /* FakeURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE891862DA83B6600AB97D0 /* FakeURLProtocol.swift */; };
+		EAE989292DA831F200835345 /* NetworkTrackingPluginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE989282DA831F200835345 /* NetworkTrackingPluginTest.swift */; };
+		EAED99FB2EE7B47E00A5FC08 /* FrustrationInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF7B54A2E09445600E6E61A /* FrustrationInteractions.swift */; };
+		EAED99FC2EE7B47E00A5FC08 /* MiscellaneousExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA84CF0A2DF8D8E400CD1CAD /* MiscellaneousExtension.swift */; };
+		EAED99FD2EE7B47E00A5FC08 /* Acai.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* Acai.swift */; };
+		EAED99FE2EE7B47E00A5FC08 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Configuration.swift */; };
+		EAED99FF2EE7B47E00A5FC08 /* ConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* ConsoleLogger.swift */; };
+		EAED9A002EE7B47E00A5FC08 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Constants.swift */; };
+		EAED9A012EE7B47E00A5FC08 /* ObjectFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE4C5F92E5F769D00FCD6E4 /* ObjectFilter.swift */; };
+		EAED9A022EE7B47E00A5FC08 /* BaseEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* BaseEvent.swift */; };
+		EAED9A032EE7B47E00A5FC08 /* EventOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* EventOptions.swift */; };
+		EAED9A042EE7B47E00A5FC08 /* GroupIdentifyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* GroupIdentifyEvent.swift */; };
+		EAED9A052EE7B47E00A5FC08 /* Identify.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* Identify.swift */; };
+		EAED9A062EE7B47E00A5FC08 /* IdentifyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* IdentifyEvent.swift */; };
+		EAED9A072EE7B47E00A5FC08 /* Revenue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Revenue.swift */; };
+		EAED9A082EE7B47E00A5FC08 /* RevenueEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* RevenueEvent.swift */; };
+		EAED9A092EE7B47E00A5FC08 /* Mediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Mediator.swift */; };
+		EAED9A0A2EE7B47E00A5FC08 /* AcaiDestinationPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* AcaiDestinationPlugin.swift */; };
+		EAED9A0B2EE7B47E00A5FC08 /* ContextPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* ContextPlugin.swift */; };
+		EAED9A0C2EE7B47E00A5FC08 /* DestinationPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* DestinationPlugin.swift */; };
+		EAED9A0D2EE7B47E00A5FC08 /* IdentityEventSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* IdentityEventSender.swift */; };
+		EAED9A0E2EE7B47E00A5FC08 /* MacOSLifecycleMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* MacOSLifecycleMonitor.swift */; };
+		EAED9A0F2EE7B47E00A5FC08 /* AppUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* AppUtil.swift */; };
+		EAED9A102EE7B47E00A5FC08 /* VendorSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* VendorSystem.swift */; };
+		EAED9A112EE7B47E00A5FC08 /* IOSLifecycleMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* IOSLifecycleMonitor.swift */; };
+		EAED9A122EE7B47E00A5FC08 /* WatchOSLifecycleMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* WatchOSLifecycleMonitor.swift */; };
+		EAED9A132EE7B47E00A5FC08 /* ObjCNetworkConnectivityCheckerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CCC6CC2B6B14510004B203 /* ObjCNetworkConnectivityCheckerPlugin.swift */; };
+		EAED9A142EE7B47E00A5FC08 /* InMemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* InMemoryStorage.swift */; };
+		EAED9A152EE7B47E00A5FC08 /* DispatchQueueHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E281B902B9BCC14009D913B /* DispatchQueueHolder.swift */; };
+		EAED9A162EE7B47E00A5FC08 /* DefaultEventUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60539692BB767390027FC24 /* DefaultEventUtils.swift */; };
+		EAED9A172EE7B47E00A5FC08 /* PersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* PersistentStorage.swift */; };
+		EAED9A182EE7B47E00A5FC08 /* NetworkSwizzler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5C95932D7A76B000DC8B3B /* NetworkSwizzler.swift */; };
+		EAED9A192EE7B47E00A5FC08 /* IdentifyInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9BEA4A299FB43B00BC0F7C /* IdentifyInterceptor.swift */; };
+		EAED9A1A2EE7B47E00A5FC08 /* LegacyDatabaseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0639F52A4DD491000F1CEE /* LegacyDatabaseStorage.swift */; };
+		EAED9A1B2EE7B47E00A5FC08 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* Timeline.swift */; };
+		EAED9A1C2EE7B47E00A5FC08 /* TrackingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* TrackingOptions.swift */; };
+		EAED9A1D2EE7B47E00A5FC08 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* Types.swift */; };
+		EAED9A1E2EE7B47E00A5FC08 /* FrustrationIgnoreExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF7B5502E0CAEAE00E6E61A /* FrustrationIgnoreExtensions.swift */; };
+		EAED9A1F2EE7B47E00A5FC08 /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Atomic.swift */; };
+		EAED9A202EE7B47E00A5FC08 /* ObjCInteractionsOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF7B5572E0F1C1000E6E61A /* ObjCInteractionsOptions.swift */; };
+		EAED9A212EE7B47E00A5FC08 /* MethodSwizzler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5C95952D7A776200DC8B3B /* MethodSwizzler.swift */; };
+		EAED9A222EE7B47E00A5FC08 /* InteractionsOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA28FDA32DED997900848BBB /* InteractionsOptions.swift */; };
+		EAED9A232EE7B47E00A5FC08 /* CodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* CodableExtension.swift */; };
+		EAED9A242EE7B47E00A5FC08 /* EventPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* EventPipeline.swift */; };
+		EAED9A252EE7B47E00A5FC08 /* UIKitElementInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C04FC402C58974A00EA8667 /* UIKitElementInteractions.swift */; };
+		EAED9A262EE7B47E00A5FC08 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* HttpClient.swift */; };
+		EAED9A272EE7B47E00A5FC08 /* OutputFileStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* OutputFileStream.swift */; };
+		EAED9A282EE7B47E00A5FC08 /* PersistentStorageResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* PersistentStorageResponseHandler.swift */; };
+		EAED9A292EE7B47E00A5FC08 /* QueueTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* QueueTimer.swift */; };
+		EAED9A2A2EE7B47E00A5FC08 /* UrlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* UrlExtension.swift */; };
+		EAED9A2B2EE7B47E00A5FC08 /* Sessions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC2B8B38E04CDB51F0E83 /* Sessions.swift */; };
+		EAED9A2C2EE7B47E00A5FC08 /* Diagonostics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E281B8B2B967F19009D913B /* Diagonostics.swift */; };
+		EAED9A2D2EE7B47E00A5FC08 /* StoragePrefixMigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDECC2335BCF4C2EC3A6206 /* StoragePrefixMigration.swift */; };
+		EAED9A2E2EE7B47E00A5FC08 /* RemnantDataMigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC19F9FBC98A0D4E5A513 /* RemnantDataMigration.swift */; };
+		EAED9A2F2EE7B47E00A5FC08 /* NetworkRequestEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8DA4C02D91C131003B00F0 /* NetworkRequestEvent.swift */; };
+		EAED9A302EE7B47E00A5FC08 /* BasePlugins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC448C42C8C0A464FAA15 /* BasePlugins.swift */; };
+		EAED9A312EE7B47E00A5FC08 /* AnalyticsConnectorPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDECD39BAA97DD4320C0AA5 /* AnalyticsConnectorPlugin.swift */; };
+		EAED9A322EE7B47E00A5FC08 /* SandboxHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D010435E2B6C59EE00F8173C /* SandboxHelper.swift */; };
+		EAED9A332EE7B47E00A5FC08 /* AnalyticsConnectorIdentityPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC48916EFEF6D5B3EEF9A /* AnalyticsConnectorIdentityPlugin.swift */; };
+		EAED9A342EE7B47E00A5FC08 /* DefaultTrackingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC17A6A0F8112A5DC8CEB /* DefaultTrackingOptions.swift */; };
+		EAED9A352EE7B47E00A5FC08 /* UIKitScreenViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC650EF79B104DC3C9F4C /* UIKitScreenViews.swift */; };
+		EAED9A362EE7B47E00A5FC08 /* ElementInteractionEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C04FC3E2C58973C00EA8667 /* ElementInteractionEvent.swift */; };
+		EAED9A372EE7B47E00A5FC08 /* ObjCAutocaptureOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C04FC422C58976800EA8667 /* ObjCAutocaptureOptions.swift */; };
+		EAED9A382EE7B47E00A5FC08 /* ScreenViewedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDECB455E34133AB256D720 /* ScreenViewedEvent.swift */; };
+		EAED9A392EE7B47E00A5FC08 /* DeepLinkOpenedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDECC405793463C10F52EF2 /* DeepLinkOpenedEvent.swift */; };
+		EAED9A3A2EE7B47E00A5FC08 /* NetworkTrackingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8DA4BE2D91C101003B00F0 /* NetworkTrackingPlugin.swift */; };
+		EAED9A3B2EE7B47E00A5FC08 /* ObjCNetworkTrackingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF020762DBAE9C7003D22A2 /* ObjCNetworkTrackingOptions.swift */; };
+		EAED9A3C2EE7B47E00A5FC08 /* ObjCConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDECEC5AAE15FD05E76359A /* ObjCConfiguration.swift */; };
+		EAED9A3D2EE7B47E00A5FC08 /* ObjCPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDECB1FA2AFF022A19104EE /* ObjCPlan.swift */; };
+		EAED9A3E2EE7B47E00A5FC08 /* Identity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E654D672D97454900BCAA85 /* Identity.swift */; };
+		EAED9A3F2EE7B47E00A5FC08 /* ObjCIngestionMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC500EBDA8B813056E2DB /* ObjCIngestionMetadata.swift */; };
+		EAED9A402EE7B47E00A5FC08 /* ObjCAcai.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC1576C95A2EB2FEF00A8 /* ObjCAcai.swift */; };
+		EAED9A412EE7B47E00A5FC08 /* ObjCEventOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDECE07F682FAAE47F77B24 /* ObjCEventOptions.swift */; };
+		EAED9A422EE7B47E00A5FC08 /* ObjCBaseEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDECCFD935A0C5A6FE85E87 /* ObjCBaseEvent.swift */; };
+		EAED9A432EE7B47E00A5FC08 /* ObjCTrackingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC48D9C242C1A39AABCC4 /* ObjCTrackingOptions.swift */; };
+		EAED9A442EE7B47E00A5FC08 /* ObjCIdentify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC5A50E197C9C5067C19E /* ObjCIdentify.swift */; };
+		EAED9A452EE7B47E00A5FC08 /* ObjCRevenue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDECB730131FFFBE11EF9FF /* ObjCRevenue.swift */; };
+		EAED9A462EE7B47E00A5FC08 /* ObjCPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC1160D95DC3F0E48DDF7 /* ObjCPlugin.swift */; };
+		EAED9A472EE7B47E00A5FC08 /* ObjCProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC18449A3E12FCADAD756 /* ObjCProperties.swift */; };
+		EAED9A482EE7B47E00A5FC08 /* ObjCLoggerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDECD4B7ED7CBCD6955D097 /* ObjCLoggerProvider.swift */; };
+		EAED9A492EE7B47E00A5FC08 /* ObjCDefaultTrackingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC44D23EBD92D7892628E /* ObjCDefaultTrackingOptions.swift */; };
+		EAED9A4A2EE7B47E00A5FC08 /* ObjCScreenViewedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEC7D924907683D0A14CA6 /* ObjCScreenViewedEvent.swift */; };
+		EAED9A4B2EE7B47E00A5FC08 /* AutocaptureOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C04FC442C58978900EA8667 /* AutocaptureOptions.swift */; };
+		EAED9A4C2EE7B47E00A5FC08 /* ObjCDeepLinkOpenedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDECD6CF59CA94D5D0256CD /* ObjCDeepLinkOpenedEvent.swift */; };
+		EAED9A4D2EE7B47E00A5FC08 /* NetworkConnectivityCheckerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EDB4CF2B643C8400454B90 /* NetworkConnectivityCheckerPlugin.swift */; };
+		EAED9A4E2EE7B47E00A5FC08 /* ObjCStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDECF8CF745F7339B65D6DB /* ObjCStorage.swift */; };
+		EAED9A502EE7B47E00A5FC08 /* AnalyticsConnectorFramework in Frameworks */ = {isa = PBXBuildFile; productRef = EAED99F72EE7B47E00A5FC08 /* AnalyticsConnectorFramework */; };
+		EAED9A542EE7B47E00A5FC08 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = B6DF481F2B5B45BE00B3E6AA /* PrivacyInfo.xcprivacy */; };
+		EAF020772DBAE9D1003D22A2 /* ObjCNetworkTrackingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF020762DBAE9C7003D22A2 /* ObjCNetworkTrackingOptions.swift */; };
+		EAF7B54B2E09446F00E6E61A /* FrustrationInteractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF7B54A2E09445600E6E61A /* FrustrationInteractions.swift */; };
+		EAF7B5512E0CAEAE00E6E61A /* FrustrationIgnoreExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF7B5502E0CAEAE00E6E61A /* FrustrationIgnoreExtensions.swift */; };
+		EAF7B5582E0F1C1D00E6E61A /* ObjCInteractionsOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF7B5572E0F1C1000E6E61A /* ObjCInteractionsOptions.swift */; };
+		OBJ_100 /* Mediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Mediator.swift */; };
+		OBJ_101 /* AcaiDestinationPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* AcaiDestinationPlugin.swift */; };
+		OBJ_102 /* ContextPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* ContextPlugin.swift */; };
+		OBJ_103 /* DestinationPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* DestinationPlugin.swift */; };
+		OBJ_104 /* IdentityEventSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* IdentityEventSender.swift */; };
+		OBJ_105 /* MacOSLifecycleMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* MacOSLifecycleMonitor.swift */; };
+		OBJ_106 /* AppUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* AppUtil.swift */; };
+		OBJ_107 /* VendorSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* VendorSystem.swift */; };
+		OBJ_108 /* IOSLifecycleMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* IOSLifecycleMonitor.swift */; };
+		OBJ_109 /* WatchOSLifecycleMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* WatchOSLifecycleMonitor.swift */; };
+		OBJ_111 /* InMemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* InMemoryStorage.swift */; };
+		OBJ_112 /* PersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* PersistentStorage.swift */; };
+		OBJ_113 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* Timeline.swift */; };
+		OBJ_114 /* TrackingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* TrackingOptions.swift */; };
+		OBJ_115 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* Types.swift */; };
+		OBJ_116 /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Atomic.swift */; };
+		OBJ_117 /* CodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* CodableExtension.swift */; };
+		OBJ_118 /* EventPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* EventPipeline.swift */; };
+		OBJ_119 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* HttpClient.swift */; };
+		OBJ_120 /* OutputFileStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* OutputFileStream.swift */; };
+		OBJ_121 /* PersistentStorageResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* PersistentStorageResponseHandler.swift */; };
+		OBJ_122 /* QueueTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* QueueTimer.swift */; };
+		OBJ_124 /* UrlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* UrlExtension.swift */; };
+		OBJ_142 /* AcaiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* AcaiTests.swift */; };
+		OBJ_143 /* ConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* ConfigurationTests.swift */; };
+		OBJ_144 /* ConsoleLoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* ConsoleLoggerTests.swift */; };
+		OBJ_145 /* BaseEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* BaseEventTests.swift */; };
+		OBJ_146 /* GroupIdentifyEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* GroupIdentifyEventTests.swift */; };
+		OBJ_147 /* IdentifyEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* IdentifyEventTests.swift */; };
+		OBJ_148 /* IdentifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* IdentifyTests.swift */; };
+		OBJ_149 /* RevenueEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* RevenueEventTests.swift */; };
+		OBJ_150 /* RevenueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* RevenueTests.swift */; };
+		OBJ_151 /* PersistentStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* PersistentStorageTests.swift */; };
+		OBJ_152 /* TestUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* TestUtilities.swift */; };
+		OBJ_153 /* TimelineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* TimelineTests.swift */; };
+		OBJ_154 /* TypesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* TypesTests.swift */; };
+		OBJ_155 /* EventPipelineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* EventPipelineTests.swift */; };
+		OBJ_156 /* HttpClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* HttpClientTests.swift */; };
+		OBJ_157 /* PersistentStorageResponseHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* PersistentStorageResponseHandlerTests.swift */; };
+		OBJ_158 /* UrlExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* UrlExtensionTests.swift */; };
+		OBJ_160 /* AcaiSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "acai-swift::Acai-Swift::Product" /* AcaiSwift.framework */; };
+		OBJ_88 /* Acai.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* Acai.swift */; };
+		OBJ_89 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Configuration.swift */; };
+		OBJ_90 /* ConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* ConsoleLogger.swift */; };
+		OBJ_91 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Constants.swift */; };
+		OBJ_93 /* BaseEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* BaseEvent.swift */; };
+		OBJ_94 /* EventOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* EventOptions.swift */; };
+		OBJ_95 /* GroupIdentifyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* GroupIdentifyEvent.swift */; };
+		OBJ_96 /* Identify.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* Identify.swift */; };
+		OBJ_97 /* IdentifyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* IdentifyEvent.swift */; };
+		OBJ_98 /* Revenue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Revenue.swift */; };
+		OBJ_99 /* RevenueEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* RevenueEvent.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		580FD1F0294A56F60036777B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "acai-swift::Acai-Swift";
+			remoteInfo = "Acai-Swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3E281B8B2B967F19009D913B /* Diagonostics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diagonostics.swift; sourceTree = "<group>"; };
+		3E281B8D2B96833D009D913B /* DiagnosticsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticsTests.swift; sourceTree = "<group>"; };
+		3E281B902B9BCC14009D913B /* DispatchQueueHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueHolder.swift; sourceTree = "<group>"; };
+		4E05BB932BE41AEB009DE475 /* Acai+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Acai+Extensions.swift"; sourceTree = "<group>"; };
+		4E27E4152DC1443800799F24 /* AutocaptureRemoteConfigTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutocaptureRemoteConfigTests.swift; sourceTree = "<group>"; };
+		4E2B646A2BA127460010E6F8 /* UIKitScreenViewsPluginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitScreenViewsPluginTests.swift; sourceTree = "<group>"; };
+		4E44BA012DB06D200048796B /* Package@swift-5.9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Package@swift-5.9.swift"; sourceTree = "<group>"; };
+		4E5F89442F2AB9A60015FBC6 /* Data+Gzip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Gzip.swift"; sourceTree = "<group>"; };
+		4E654D672D97454900BCAA85 /* Identity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identity.swift; sourceTree = "<group>"; };
+		4E654DE02D9B60E300BCAA85 /* IdentityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityTests.swift; sourceTree = "<group>"; };
+		4ED02BB72F299280001AE863 /* Data+Gzip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Gzip.swift"; sourceTree = "<group>"; };
+		4ED02BBA2F299583001AE863 /* GzipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GzipTests.swift; sourceTree = "<group>"; };
+		6C04FC3E2C58973C00EA8667 /* ElementInteractionEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementInteractionEvent.swift; sourceTree = "<group>"; };
+		6C04FC402C58974A00EA8667 /* UIKitElementInteractions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitElementInteractions.swift; sourceTree = "<group>"; };
+		6C04FC422C58976800EA8667 /* ObjCAutocaptureOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjCAutocaptureOptions.swift; sourceTree = "<group>"; };
+		6C04FC442C58978900EA8667 /* AutocaptureOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutocaptureOptions.swift; sourceTree = "<group>"; };
+		6C04FC462C5897AC00EA8667 /* AutocaptureOptionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutocaptureOptionsTests.swift; sourceTree = "<group>"; };
+		6C23EF142C38AC32000DC8C8 /* UIKitUserInteractionPluginTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitUserInteractionPluginTest.swift; sourceTree = "<group>"; };
+		8EDEC0630C3B587334275D9B /* AcaiSessionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcaiSessionTests.swift; sourceTree = "<group>"; };
+		8EDEC1160D95DC3F0E48DDF7 /* ObjCPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjCPlugin.swift; sourceTree = "<group>"; };
+		8EDEC1576C95A2EB2FEF00A8 /* ObjCAcai.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjCAcai.swift; sourceTree = "<group>"; };
+		8EDEC17A6A0F8112A5DC8CEB /* DefaultTrackingOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTrackingOptions.swift; sourceTree = "<group>"; };
+		8EDEC18449A3E12FCADAD756 /* ObjCProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjCProperties.swift; sourceTree = "<group>"; };
+		8EDEC19F9FBC98A0D4E5A513 /* RemnantDataMigration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemnantDataMigration.swift; sourceTree = "<group>"; };
+		8EDEC2B8B38E04CDB51F0E83 /* Sessions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sessions.swift; sourceTree = "<group>"; };
+		8EDEC448C42C8C0A464FAA15 /* BasePlugins.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePlugins.swift; sourceTree = "<group>"; };
+		8EDEC44D23EBD92D7892628E /* ObjCDefaultTrackingOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjCDefaultTrackingOptions.swift; sourceTree = "<group>"; };
+		8EDEC48916EFEF6D5B3EEF9A /* AnalyticsConnectorIdentityPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsConnectorIdentityPlugin.swift; sourceTree = "<group>"; };
+		8EDEC48D9C242C1A39AABCC4 /* ObjCTrackingOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjCTrackingOptions.swift; sourceTree = "<group>"; };
+		8EDEC4F83BFAA664749FAEF0 /* QueueTimeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueTimeTests.swift; sourceTree = "<group>"; };
+		8EDEC500EBDA8B813056E2DB /* ObjCIngestionMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjCIngestionMetadata.swift; sourceTree = "<group>"; };
+		8EDEC5A50E197C9C5067C19E /* ObjCIdentify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjCIdentify.swift; sourceTree = "<group>"; };
+		8EDEC650EF79B104DC3C9F4C /* UIKitScreenViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitScreenViews.swift; sourceTree = "<group>"; };
+		8EDEC6A9899998F823C278F7 /* RemnantDataMigrationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemnantDataMigrationTests.swift; sourceTree = "<group>"; };
+		8EDEC7D924907683D0A14CA6 /* ObjCScreenViewedEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjCScreenViewedEvent.swift; sourceTree = "<group>"; };
+		8EDEC9B98272069D70D08EA4 /* StoragePrefixMigrationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoragePrefixMigrationTests.swift; sourceTree = "<group>"; };
+		8EDECB1FA2AFF022A19104EE /* ObjCPlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjCPlan.swift; sourceTree = "<group>"; };
+		8EDECB455E34133AB256D720 /* ScreenViewedEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenViewedEvent.swift; sourceTree = "<group>"; };
+		8EDECB730131FFFBE11EF9FF /* ObjCRevenue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjCRevenue.swift; sourceTree = "<group>"; };
+		8EDECC2335BCF4C2EC3A6206 /* StoragePrefixMigration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoragePrefixMigration.swift; sourceTree = "<group>"; };
+		8EDECC405793463C10F52EF2 /* DeepLinkOpenedEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepLinkOpenedEvent.swift; sourceTree = "<group>"; };
+		8EDECCFD935A0C5A6FE85E87 /* ObjCBaseEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjCBaseEvent.swift; sourceTree = "<group>"; };
+		8EDECD39BAA97DD4320C0AA5 /* AnalyticsConnectorPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsConnectorPlugin.swift; sourceTree = "<group>"; };
+		8EDECD4B7ED7CBCD6955D097 /* ObjCLoggerProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjCLoggerProvider.swift; sourceTree = "<group>"; };
+		8EDECD6CF59CA94D5D0256CD /* ObjCDeepLinkOpenedEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjCDeepLinkOpenedEvent.swift; sourceTree = "<group>"; };
+		8EDECE07F682FAAE47F77B24 /* ObjCEventOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjCEventOptions.swift; sourceTree = "<group>"; };
+		8EDECEC5AAE15FD05E76359A /* ObjCConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjCConfiguration.swift; sourceTree = "<group>"; };
+		8EDECF8CF745F7339B65D6DB /* ObjCStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjCStorage.swift; sourceTree = "<group>"; };
+		B60539692BB767390027FC24 /* DefaultEventUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultEventUtils.swift; sourceTree = "<group>"; };
+		B6CCC6CC2B6B14510004B203 /* ObjCNetworkConnectivityCheckerPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjCNetworkConnectivityCheckerPlugin.swift; sourceTree = "<group>"; };
+		B6DF481F2B5B45BE00B3E6AA /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		B6EDB4CF2B643C8400454B90 /* NetworkConnectivityCheckerPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnectivityCheckerPlugin.swift; sourceTree = "<group>"; };
+		B6F338A22B685793006179E2 /* NetworkConnectivityCheckerPluginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnectivityCheckerPluginTests.swift; sourceTree = "<group>"; };
+		BA0359C92A51585D007C383B /* legacy_v3.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = legacy_v3.sqlite; sourceTree = "<group>"; };
+		BA0639F52A4DD491000F1CEE /* LegacyDatabaseStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyDatabaseStorage.swift; sourceTree = "<group>"; };
+		BA1EC0F52A9F63FD00C2D547 /* AcaiIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcaiIOSTests.swift; sourceTree = "<group>"; };
+		BA994B992A4F48DE00D0913F /* LegacyDatabaseStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyDatabaseStorageTests.swift; sourceTree = "<group>"; };
+		BA994B9B2A4F4B7500D0913F /* legacy_v4.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = legacy_v4.sqlite; sourceTree = "<group>"; };
+		BA9BEA4A299FB43B00BC0F7C /* IdentifyInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyInterceptor.swift; sourceTree = "<group>"; };
+		BA9BEA4C299FB4BB00BC0F7C /* IdentifyInterceptorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyInterceptorTests.swift; sourceTree = "<group>"; };
+		D010435E2B6C59EE00F8173C /* SandboxHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandboxHelper.swift; sourceTree = "<group>"; };
+		D01043602B6C5A8500F8173C /* SandboxHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandboxHelperTests.swift; sourceTree = "<group>"; };
+		EA1F2CD82D8781950096A576 /* MethodSwizzlerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodSwizzlerTest.swift; sourceTree = "<group>"; };
+		EA28FDA32DED997900848BBB /* InteractionsOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionsOptions.swift; sourceTree = "<group>"; };
+		EA2FD8922EECDD6F002AB27E /* AutocaptureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutocaptureManager.swift; sourceTree = "<group>"; };
+		EA5C95932D7A76B000DC8B3B /* NetworkSwizzler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSwizzler.swift; sourceTree = "<group>"; };
+		EA5C95952D7A776200DC8B3B /* MethodSwizzler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodSwizzler.swift; sourceTree = "<group>"; };
+		EA84CF0A2DF8D8E400CD1CAD /* MiscellaneousExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiscellaneousExtension.swift; sourceTree = "<group>"; };
+		EA8DA4BE2D91C101003B00F0 /* NetworkTrackingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTrackingPlugin.swift; sourceTree = "<group>"; };
+		EA8DA4C02D91C131003B00F0 /* NetworkRequestEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestEvent.swift; sourceTree = "<group>"; };
+		EA9D50F82E7342AE0037E925 /* NetworkTrackingPlugin+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkTrackingPlugin+Extensions.swift"; sourceTree = "<group>"; };
+		EAE4C5F92E5F769D00FCD6E4 /* ObjectFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectFilter.swift; sourceTree = "<group>"; };
+		EAE4C5FB2E5FA0C100FCD6E4 /* ObjectFilterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectFilterTests.swift; sourceTree = "<group>"; };
+		EAE891862DA83B6600AB97D0 /* FakeURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeURLProtocol.swift; sourceTree = "<group>"; };
+		EAE989282DA831F200835345 /* NetworkTrackingPluginTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTrackingPluginTest.swift; sourceTree = "<group>"; };
+		EAED9A5B2EE7B47E00A5FC08 /* AcaiSwiftNoUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AcaiSwiftNoUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAF020762DBAE9C7003D22A2 /* ObjCNetworkTrackingOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjCNetworkTrackingOptions.swift; sourceTree = "<group>"; };
+		EAF7B54A2E09445600E6E61A /* FrustrationInteractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrustrationInteractions.swift; sourceTree = "<group>"; };
+		EAF7B5502E0CAEAE00E6E61A /* FrustrationIgnoreExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrustrationIgnoreExtensions.swift; sourceTree = "<group>"; };
+		EAF7B5572E0F1C1000E6E61A /* ObjCInteractionsOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjCInteractionsOptions.swift; sourceTree = "<group>"; };
+		OBJ_10 /* ConsoleLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleLogger.swift; sourceTree = "<group>"; };
+		OBJ_11 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		OBJ_14 /* BaseEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEvent.swift; sourceTree = "<group>"; };
+		OBJ_15 /* EventOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventOptions.swift; sourceTree = "<group>"; };
+		OBJ_16 /* GroupIdentifyEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupIdentifyEvent.swift; sourceTree = "<group>"; };
+		OBJ_17 /* Identify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identify.swift; sourceTree = "<group>"; };
+		OBJ_18 /* IdentifyEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyEvent.swift; sourceTree = "<group>"; };
+		OBJ_19 /* Revenue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Revenue.swift; sourceTree = "<group>"; };
+		OBJ_20 /* RevenueEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueEvent.swift; sourceTree = "<group>"; };
+		OBJ_21 /* Mediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mediator.swift; sourceTree = "<group>"; };
+		OBJ_23 /* AcaiDestinationPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcaiDestinationPlugin.swift; sourceTree = "<group>"; };
+		OBJ_24 /* ContextPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextPlugin.swift; sourceTree = "<group>"; };
+		OBJ_25 /* DestinationPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationPlugin.swift; sourceTree = "<group>"; };
+		OBJ_26 /* IdentityEventSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityEventSender.swift; sourceTree = "<group>"; };
+		OBJ_28 /* MacOSLifecycleMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacOSLifecycleMonitor.swift; sourceTree = "<group>"; };
+		OBJ_30 /* AppUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtil.swift; sourceTree = "<group>"; };
+		OBJ_31 /* VendorSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorSystem.swift; sourceTree = "<group>"; };
+		OBJ_33 /* IOSLifecycleMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSLifecycleMonitor.swift; sourceTree = "<group>"; };
+		OBJ_35 /* WatchOSLifecycleMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchOSLifecycleMonitor.swift; sourceTree = "<group>"; };
+		OBJ_38 /* InMemoryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryStorage.swift; sourceTree = "<group>"; };
+		OBJ_39 /* PersistentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStorage.swift; sourceTree = "<group>"; };
+		OBJ_40 /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
+		OBJ_41 /* TrackingOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingOptions.swift; sourceTree = "<group>"; };
+		OBJ_42 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		OBJ_44 /* Atomic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atomic.swift; sourceTree = "<group>"; };
+		OBJ_45 /* CodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableExtension.swift; sourceTree = "<group>"; };
+		OBJ_46 /* EventPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPipeline.swift; sourceTree = "<group>"; };
+		OBJ_47 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		OBJ_48 /* OutputFileStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputFileStream.swift; sourceTree = "<group>"; };
+		OBJ_49 /* PersistentStorageResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStorageResponseHandler.swift; sourceTree = "<group>"; };
+		OBJ_50 /* QueueTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueTimer.swift; sourceTree = "<group>"; };
+		OBJ_52 /* UrlExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlExtension.swift; sourceTree = "<group>"; };
+		OBJ_54 /* AcaiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcaiTests.swift; sourceTree = "<group>"; };
+		OBJ_55 /* ConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationTests.swift; sourceTree = "<group>"; };
+		OBJ_56 /* ConsoleLoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleLoggerTests.swift; sourceTree = "<group>"; };
+		OBJ_58 /* BaseEventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEventTests.swift; sourceTree = "<group>"; };
+		OBJ_59 /* GroupIdentifyEventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupIdentifyEventTests.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_60 /* IdentifyEventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyEventTests.swift; sourceTree = "<group>"; };
+		OBJ_61 /* IdentifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyTests.swift; sourceTree = "<group>"; };
+		OBJ_62 /* RevenueEventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueEventTests.swift; sourceTree = "<group>"; };
+		OBJ_63 /* RevenueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueTests.swift; sourceTree = "<group>"; };
+		OBJ_65 /* PersistentStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStorageTests.swift; sourceTree = "<group>"; };
+		OBJ_67 /* TestUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtilities.swift; sourceTree = "<group>"; };
+		OBJ_68 /* TimelineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineTests.swift; sourceTree = "<group>"; };
+		OBJ_69 /* TypesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesTests.swift; sourceTree = "<group>"; };
+		OBJ_71 /* EventPipelineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPipelineTests.swift; sourceTree = "<group>"; };
+		OBJ_72 /* HttpClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientTests.swift; sourceTree = "<group>"; };
+		OBJ_73 /* PersistentStorageResponseHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStorageResponseHandlerTests.swift; sourceTree = "<group>"; };
+		OBJ_74 /* UrlExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlExtensionTests.swift; sourceTree = "<group>"; };
+		OBJ_78 /* Examples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Examples; sourceTree = SOURCE_ROOT; };
+		OBJ_79 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		OBJ_8 /* Acai.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acai.swift; sourceTree = "<group>"; };
+		OBJ_80 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_81 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		OBJ_82 /* AcaiSwift.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = AcaiSwift.podspec; sourceTree = "<group>"; };
+		OBJ_9 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		"acai-swift::Acai-Swift::Product" /* AcaiSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AcaiSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"acai-swift::Acai-SwiftTests::Product" /* Acai-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = "Acai-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAED9A4F2EE7B47E00A5FC08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				EA2FD8882EE8A0EB002AB27E /* AmplitudeCoreNoUIKitFramework in Frameworks */,
+				EAED9A502EE7B47E00A5FC08 /* AnalyticsConnectorFramework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_125 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				EA2FD8862EE8A0E4002AB27E /* AmplitudeCoreFramework in Frameworks */,
+				4EB530752CD2E46A00E961F4 /* AnalyticsConnectorFramework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_159 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_160 /* AcaiSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4EB530702CD2E05000E961F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8EDEC33A32439724A363C433 /* Migration */ = {
+			isa = PBXGroup;
+			children = (
+				8EDECC2335BCF4C2EC3A6206 /* StoragePrefixMigration.swift */,
+				BA0639F52A4DD491000F1CEE /* LegacyDatabaseStorage.swift */,
+				8EDEC19F9FBC98A0D4E5A513 /* RemnantDataMigration.swift */,
+			);
+			path = Migration;
+			sourceTree = "<group>";
+		};
+		8EDECAFD8271434E8DC7BA78 /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				EAF7B5572E0F1C1000E6E61A /* ObjCInteractionsOptions.swift */,
+				EAF020762DBAE9C7003D22A2 /* ObjCNetworkTrackingOptions.swift */,
+				6C04FC422C58976800EA8667 /* ObjCAutocaptureOptions.swift */,
+				B6CCC6CC2B6B14510004B203 /* ObjCNetworkConnectivityCheckerPlugin.swift */,
+				8EDECEC5AAE15FD05E76359A /* ObjCConfiguration.swift */,
+				8EDECB1FA2AFF022A19104EE /* ObjCPlan.swift */,
+				8EDEC500EBDA8B813056E2DB /* ObjCIngestionMetadata.swift */,
+				8EDEC1576C95A2EB2FEF00A8 /* ObjCAcai.swift */,
+				8EDECE07F682FAAE47F77B24 /* ObjCEventOptions.swift */,
+				8EDECCFD935A0C5A6FE85E87 /* ObjCBaseEvent.swift */,
+				8EDEC48D9C242C1A39AABCC4 /* ObjCTrackingOptions.swift */,
+				8EDEC5A50E197C9C5067C19E /* ObjCIdentify.swift */,
+				8EDECB730131FFFBE11EF9FF /* ObjCRevenue.swift */,
+				8EDEC1160D95DC3F0E48DDF7 /* ObjCPlugin.swift */,
+				8EDEC18449A3E12FCADAD756 /* ObjCProperties.swift */,
+				8EDECD4B7ED7CBCD6955D097 /* ObjCLoggerProvider.swift */,
+				8EDEC44D23EBD92D7892628E /* ObjCDefaultTrackingOptions.swift */,
+				8EDEC7D924907683D0A14CA6 /* ObjCScreenViewedEvent.swift */,
+				8EDECD6CF59CA94D5D0256CD /* ObjCDeepLinkOpenedEvent.swift */,
+				8EDECF8CF745F7339B65D6DB /* ObjCStorage.swift */,
+			);
+			path = ObjC;
+			sourceTree = "<group>";
+		};
+		8EDECBC5925DC68913C7CB89 /* Migration */ = {
+			isa = PBXGroup;
+			children = (
+				8EDEC9B98272069D70D08EA4 /* StoragePrefixMigrationTests.swift */,
+				BA0359C92A51585D007C383B /* legacy_v3.sqlite */,
+				BA994B9B2A4F4B7500D0913F /* legacy_v4.sqlite */,
+				BA994B992A4F48DE00D0913F /* LegacyDatabaseStorageTests.swift */,
+				8EDEC6A9899998F823C278F7 /* RemnantDataMigrationTests.swift */,
+			);
+			path = Migration;
+			sourceTree = "<group>";
+		};
+		B6F3389F2B6854A8006179E2 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				6C23EF142C38AC32000DC8C8 /* UIKitUserInteractionPluginTest.swift */,
+				B6F338A22B685793006179E2 /* NetworkConnectivityCheckerPluginTests.swift */,
+				4E2B646A2BA127460010E6F8 /* UIKitScreenViewsPluginTests.swift */,
+				EAE989282DA831F200835345 /* NetworkTrackingPluginTest.swift */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		OBJ_13 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				EA8DA4C02D91C131003B00F0 /* NetworkRequestEvent.swift */,
+				6C04FC3E2C58973C00EA8667 /* ElementInteractionEvent.swift */,
+				OBJ_14 /* BaseEvent.swift */,
+				OBJ_15 /* EventOptions.swift */,
+				OBJ_16 /* GroupIdentifyEvent.swift */,
+				OBJ_17 /* Identify.swift */,
+				OBJ_18 /* IdentifyEvent.swift */,
+				OBJ_19 /* Revenue.swift */,
+				OBJ_20 /* RevenueEvent.swift */,
+				8EDECB455E34133AB256D720 /* ScreenViewedEvent.swift */,
+				8EDECC405793463C10F52EF2 /* DeepLinkOpenedEvent.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		OBJ_22 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				EA8DA4BE2D91C101003B00F0 /* NetworkTrackingPlugin.swift */,
+				OBJ_23 /* AcaiDestinationPlugin.swift */,
+				OBJ_24 /* ContextPlugin.swift */,
+				OBJ_25 /* DestinationPlugin.swift */,
+				OBJ_26 /* IdentityEventSender.swift */,
+				OBJ_27 /* Mac */,
+				OBJ_29 /* Vendors */,
+				OBJ_32 /* iOS */,
+				OBJ_34 /* watchOS */,
+				8EDEC448C42C8C0A464FAA15 /* BasePlugins.swift */,
+				8EDECD39BAA97DD4320C0AA5 /* AnalyticsConnectorPlugin.swift */,
+				8EDEC48916EFEF6D5B3EEF9A /* AnalyticsConnectorIdentityPlugin.swift */,
+				B6EDB4CF2B643C8400454B90 /* NetworkConnectivityCheckerPlugin.swift */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		OBJ_27 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_28 /* MacOSLifecycleMonitor.swift */,
+			);
+			path = Mac;
+			sourceTree = "<group>";
+		};
+		OBJ_29 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_30 /* AppUtil.swift */,
+				OBJ_31 /* VendorSystem.swift */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		OBJ_32 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAF7B5502E0CAEAE00E6E61A /* FrustrationIgnoreExtensions.swift */,
+				EAF7B54A2E09445600E6E61A /* FrustrationInteractions.swift */,
+				6C04FC402C58974A00EA8667 /* UIKitElementInteractions.swift */,
+				OBJ_33 /* IOSLifecycleMonitor.swift */,
+				8EDEC650EF79B104DC3C9F4C /* UIKitScreenViews.swift */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		OBJ_34 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_35 /* WatchOSLifecycleMonitor.swift */,
+			);
+			path = watchOS;
+			sourceTree = "<group>";
+		};
+		OBJ_37 /* Storages */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_38 /* InMemoryStorage.swift */,
+				OBJ_39 /* PersistentStorage.swift */,
+			);
+			path = Storages;
+			sourceTree = "<group>";
+		};
+		OBJ_43 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4ED02BB72F299280001AE863 /* Data+Gzip.swift */,
+				EA2FD8922EECDD6F002AB27E /* AutocaptureManager.swift */,
+				EAE4C5F92E5F769D00FCD6E4 /* ObjectFilter.swift */,
+				EA84CF0A2DF8D8E400CD1CAD /* MiscellaneousExtension.swift */,
+				EA5C95952D7A776200DC8B3B /* MethodSwizzler.swift */,
+				EA5C95932D7A76B000DC8B3B /* NetworkSwizzler.swift */,
+				OBJ_44 /* Atomic.swift */,
+				OBJ_45 /* CodableExtension.swift */,
+				OBJ_46 /* EventPipeline.swift */,
+				OBJ_47 /* HttpClient.swift */,
+				OBJ_48 /* OutputFileStream.swift */,
+				OBJ_49 /* PersistentStorageResponseHandler.swift */,
+				OBJ_50 /* QueueTimer.swift */,
+				OBJ_52 /* UrlExtension.swift */,
+				BA9BEA4A299FB43B00BC0F7C /* IdentifyInterceptor.swift */,
+				D010435E2B6C59EE00F8173C /* SandboxHelper.swift */,
+				3E281B8B2B967F19009D913B /* Diagonostics.swift */,
+				3E281B902B9BCC14009D913B /* DispatchQueueHolder.swift */,
+				B60539692BB767390027FC24 /* DefaultEventUtils.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		OBJ_5 = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				4E44BA012DB06D200048796B /* Package@swift-5.9.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_53 /* Tests */,
+				OBJ_75 /* Products */,
+				OBJ_78 /* Examples */,
+				OBJ_79 /* LICENSE */,
+				OBJ_80 /* README.md */,
+				OBJ_81 /* CONTRIBUTING.md */,
+				OBJ_82 /* AcaiSwift.podspec */,
+				4EB530702CD2E05000E961F4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		OBJ_53 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4E27E4152DC1443800799F24 /* AutocaptureRemoteConfigTests.swift */,
+				4E654DE02D9B60E300BCAA85 /* IdentityTests.swift */,
+				6C04FC462C5897AC00EA8667 /* AutocaptureOptionsTests.swift */,
+				B6F3389F2B6854A8006179E2 /* Plugins */,
+				OBJ_54 /* AcaiTests.swift */,
+				OBJ_55 /* ConfigurationTests.swift */,
+				OBJ_56 /* ConsoleLoggerTests.swift */,
+				OBJ_57 /* Events */,
+				OBJ_64 /* Storages */,
+				OBJ_66 /* Supports */,
+				OBJ_68 /* TimelineTests.swift */,
+				OBJ_69 /* TypesTests.swift */,
+				OBJ_70 /* Utilities */,
+				8EDEC0630C3B587334275D9B /* AcaiSessionTests.swift */,
+				8EDECBC5925DC68913C7CB89 /* Migration */,
+				BA1EC0F52A9F63FD00C2D547 /* AcaiIOSTests.swift */,
+				4E05BB932BE41AEB009DE475 /* Acai+Extensions.swift */,
+				EA9D50F82E7342AE0037E925 /* NetworkTrackingPlugin+Extensions.swift */,
+			);
+			name = Tests;
+			path = Tests/AcaiTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_57 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_58 /* BaseEventTests.swift */,
+				OBJ_59 /* GroupIdentifyEventTests.swift */,
+				OBJ_60 /* IdentifyEventTests.swift */,
+				OBJ_61 /* IdentifyTests.swift */,
+				OBJ_62 /* RevenueEventTests.swift */,
+				OBJ_63 /* RevenueTests.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		OBJ_64 /* Storages */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_65 /* PersistentStorageTests.swift */,
+			);
+			path = Storages;
+			sourceTree = "<group>";
+		};
+		OBJ_66 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				EAE891862DA83B6600AB97D0 /* FakeURLProtocol.swift */,
+				OBJ_67 /* TestUtilities.swift */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EA28FDA32DED997900848BBB /* InteractionsOptions.swift */,
+				4E654D672D97454900BCAA85 /* Identity.swift */,
+				6C04FC442C58978900EA8667 /* AutocaptureOptions.swift */,
+				B6DF481F2B5B45BE00B3E6AA /* PrivacyInfo.xcprivacy */,
+				OBJ_8 /* Acai.swift */,
+				OBJ_9 /* Configuration.swift */,
+				OBJ_10 /* ConsoleLogger.swift */,
+				OBJ_11 /* Constants.swift */,
+				OBJ_13 /* Events */,
+				OBJ_21 /* Mediator.swift */,
+				OBJ_22 /* Plugins */,
+				OBJ_37 /* Storages */,
+				OBJ_40 /* Timeline.swift */,
+				OBJ_41 /* TrackingOptions.swift */,
+				OBJ_42 /* Types.swift */,
+				OBJ_43 /* Utilities */,
+				8EDEC2B8B38E04CDB51F0E83 /* Sessions.swift */,
+				8EDEC33A32439724A363C433 /* Migration */,
+				8EDEC17A6A0F8112A5DC8CEB /* DefaultTrackingOptions.swift */,
+				8EDECAFD8271434E8DC7BA78 /* ObjC */,
+			);
+			name = Sources;
+			path = Sources/Acai;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_70 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4ED02BBA2F299583001AE863 /* GzipTests.swift */,
+				4E5F89442F2AB9A60015FBC6 /* Data+Gzip.swift */,
+				EAE4C5FB2E5FA0C100FCD6E4 /* ObjectFilterTests.swift */,
+				OBJ_71 /* EventPipelineTests.swift */,
+				OBJ_72 /* HttpClientTests.swift */,
+				OBJ_73 /* PersistentStorageResponseHandlerTests.swift */,
+				OBJ_74 /* UrlExtensionTests.swift */,
+				BA9BEA4C299FB4BB00BC0F7C /* IdentifyInterceptorTests.swift */,
+				8EDEC4F83BFAA664749FAEF0 /* QueueTimeTests.swift */,
+				D01043602B6C5A8500F8173C /* SandboxHelperTests.swift */,
+				3E281B8D2B96833D009D913B /* DiagnosticsTests.swift */,
+				EA1F2CD82D8781950096A576 /* MethodSwizzlerTest.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		OBJ_75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"acai-swift::Acai-Swift::Product" /* AcaiSwift.framework */,
+				"acai-swift::Acai-SwiftTests::Product" /* Acai-SwiftTests.xctest */,
+				EAED9A5B2EE7B47E00A5FC08 /* AcaiSwiftNoUIKit.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAED99F62EE7B47E00A5FC08 /* Acai-Swift-NoUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAED9A562EE7B47E00A5FC08 /* Build configuration list for PBXNativeTarget "Acai-Swift-NoUIKit" */;
+			buildPhases = (
+				EAED99FA2EE7B47E00A5FC08 /* Sources */,
+				EAED9A4F2EE7B47E00A5FC08 /* Frameworks */,
+				EAED9A522EE7B47E00A5FC08 /* ShellScript */,
+				EAED9A532EE7B47E00A5FC08 /* Resources */,
+				EAED9A552EE7B47E00A5FC08 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Acai-Swift-NoUIKit";
+			packageProductDependencies = (
+				EAED99F72EE7B47E00A5FC08 /* AnalyticsConnectorFramework */,
+				EA2FD8872EE8A0EB002AB27E /* AmplitudeCoreNoUIKitFramework */,
+			);
+			productName = Acai_Swift;
+			productReference = EAED9A5B2EE7B47E00A5FC08 /* AcaiSwiftNoUIKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"acai-swift::Acai-Swift" /* Acai-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_84 /* Build configuration list for PBXNativeTarget "Acai-Swift" */;
+			buildPhases = (
+				OBJ_87 /* Sources */,
+				OBJ_125 /* Frameworks */,
+				3E281B8F2B98EC92009D913B /* ShellScript */,
+				4E3871612BB34DB1002890AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Acai-Swift";
+			packageProductDependencies = (
+				4EB530742CD2E46A00E961F4 /* AnalyticsConnectorFramework */,
+				EA2FD8852EE8A0E4002AB27E /* AmplitudeCoreFramework */,
+			);
+			productName = Acai_Swift;
+			productReference = "acai-swift::Acai-Swift::Product" /* AcaiSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"acai-swift::Acai-SwiftTests" /* Acai-SwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_138 /* Build configuration list for PBXNativeTarget "Acai-SwiftTests" */;
+			buildPhases = (
+				OBJ_141 /* Sources */,
+				OBJ_159 /* Frameworks */,
+				BA994B9C2A4F4FBE00D0913F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_161 /* PBXTargetDependency */,
+			);
+			name = "Acai-SwiftTests";
+			productName = Acai_SwiftTests;
+			productReference = "acai-swift::Acai-SwiftTests::Product" /* Acai-SwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Acai-Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5;
+			packageReferences = (
+				4EB530762CD2EB9700E961F4 /* XCRemoteSwiftPackageReference "analytics-connector-ios" */,
+				4E65A5382DA88C98004ED163 /* XCRemoteSwiftPackageReference "AmplitudeCore-Swift" */,
+			);
+			productRefGroup = OBJ_75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"acai-swift::Acai-Swift" /* Acai-Swift */,
+				"acai-swift::Acai-SwiftTests" /* Acai-SwiftTests */,
+				EAED99F62EE7B47E00A5FC08 /* Acai-Swift-NoUIKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E3871612BB34DB1002890AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E3871622BB34DBC002890AB /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA994B9C2A4F4FBE00D0913F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA994B9D2A4F4FCB00D0913F /* legacy_v4.sqlite in Resources */,
+				BA0359CA2A51585D007C383B /* legacy_v3.sqlite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAED9A532EE7B47E00A5FC08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAED9A542EE7B47E00A5FC08 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E281B8F2B98EC92009D913B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint Sources\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		EAED9A522EE7B47E00A5FC08 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint Sources\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		EAED9A552EE7B47E00A5FC08 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "HAS_UIKIT=$(otool -L \"$TARGET_BUILD_DIR/$EXECUTABLE_PATH\" | tail -n +3 | grep grep \"/UIKit\")\n\nif [[ \"$SDK_NAME\" == iphone* ]] && [ -n \"$HAS_UIKIT\" ]; then\n  echo \"error: AcaiSwift was built with ACAI_DISABLE_UIKIT, but UIKit is still linked. Check any added UIKit imports and surround with conditional compilation flags.\"\n  exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAED99FA2EE7B47E00A5FC08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				EAED99FB2EE7B47E00A5FC08 /* FrustrationInteractions.swift in Sources */,
+				EAED99FC2EE7B47E00A5FC08 /* MiscellaneousExtension.swift in Sources */,
+				EAED99FD2EE7B47E00A5FC08 /* Acai.swift in Sources */,
+				EAED99FE2EE7B47E00A5FC08 /* Configuration.swift in Sources */,
+				EAED99FF2EE7B47E00A5FC08 /* ConsoleLogger.swift in Sources */,
+				EAED9A002EE7B47E00A5FC08 /* Constants.swift in Sources */,
+				EAED9A012EE7B47E00A5FC08 /* ObjectFilter.swift in Sources */,
+				EAED9A022EE7B47E00A5FC08 /* BaseEvent.swift in Sources */,
+				EA2FD8942EECDD6F002AB27E /* AutocaptureManager.swift in Sources */,
+				EAED9A032EE7B47E00A5FC08 /* EventOptions.swift in Sources */,
+				EAED9A042EE7B47E00A5FC08 /* GroupIdentifyEvent.swift in Sources */,
+				EAED9A052EE7B47E00A5FC08 /* Identify.swift in Sources */,
+				EAED9A062EE7B47E00A5FC08 /* IdentifyEvent.swift in Sources */,
+				EAED9A072EE7B47E00A5FC08 /* Revenue.swift in Sources */,
+				EAED9A082EE7B47E00A5FC08 /* RevenueEvent.swift in Sources */,
+				EAED9A092EE7B47E00A5FC08 /* Mediator.swift in Sources */,
+				EAED9A0A2EE7B47E00A5FC08 /* AcaiDestinationPlugin.swift in Sources */,
+				EAED9A0B2EE7B47E00A5FC08 /* ContextPlugin.swift in Sources */,
+				EAED9A0C2EE7B47E00A5FC08 /* DestinationPlugin.swift in Sources */,
+				EAED9A0D2EE7B47E00A5FC08 /* IdentityEventSender.swift in Sources */,
+				EAED9A0E2EE7B47E00A5FC08 /* MacOSLifecycleMonitor.swift in Sources */,
+				EAED9A0F2EE7B47E00A5FC08 /* AppUtil.swift in Sources */,
+				EAED9A102EE7B47E00A5FC08 /* VendorSystem.swift in Sources */,
+				EAED9A112EE7B47E00A5FC08 /* IOSLifecycleMonitor.swift in Sources */,
+				EAED9A122EE7B47E00A5FC08 /* WatchOSLifecycleMonitor.swift in Sources */,
+				EAED9A132EE7B47E00A5FC08 /* ObjCNetworkConnectivityCheckerPlugin.swift in Sources */,
+				EAED9A142EE7B47E00A5FC08 /* InMemoryStorage.swift in Sources */,
+				EAED9A152EE7B47E00A5FC08 /* DispatchQueueHolder.swift in Sources */,
+				EAED9A162EE7B47E00A5FC08 /* DefaultEventUtils.swift in Sources */,
+				4ED02BB92F299298001AE863 /* Data+Gzip.swift in Sources */,
+				EAED9A172EE7B47E00A5FC08 /* PersistentStorage.swift in Sources */,
+				EAED9A182EE7B47E00A5FC08 /* NetworkSwizzler.swift in Sources */,
+				EAED9A192EE7B47E00A5FC08 /* IdentifyInterceptor.swift in Sources */,
+				EAED9A1A2EE7B47E00A5FC08 /* LegacyDatabaseStorage.swift in Sources */,
+				EAED9A1B2EE7B47E00A5FC08 /* Timeline.swift in Sources */,
+				EAED9A1C2EE7B47E00A5FC08 /* TrackingOptions.swift in Sources */,
+				EAED9A1D2EE7B47E00A5FC08 /* Types.swift in Sources */,
+				EAED9A1E2EE7B47E00A5FC08 /* FrustrationIgnoreExtensions.swift in Sources */,
+				EAED9A1F2EE7B47E00A5FC08 /* Atomic.swift in Sources */,
+				EAED9A202EE7B47E00A5FC08 /* ObjCInteractionsOptions.swift in Sources */,
+				EAED9A212EE7B47E00A5FC08 /* MethodSwizzler.swift in Sources */,
+				EAED9A222EE7B47E00A5FC08 /* InteractionsOptions.swift in Sources */,
+				EAED9A232EE7B47E00A5FC08 /* CodableExtension.swift in Sources */,
+				EAED9A242EE7B47E00A5FC08 /* EventPipeline.swift in Sources */,
+				EAED9A252EE7B47E00A5FC08 /* UIKitElementInteractions.swift in Sources */,
+				EAED9A262EE7B47E00A5FC08 /* HttpClient.swift in Sources */,
+				EAED9A272EE7B47E00A5FC08 /* OutputFileStream.swift in Sources */,
+				EAED9A282EE7B47E00A5FC08 /* PersistentStorageResponseHandler.swift in Sources */,
+				EAED9A292EE7B47E00A5FC08 /* QueueTimer.swift in Sources */,
+				EAED9A2A2EE7B47E00A5FC08 /* UrlExtension.swift in Sources */,
+				EAED9A2B2EE7B47E00A5FC08 /* Sessions.swift in Sources */,
+				EAED9A2C2EE7B47E00A5FC08 /* Diagonostics.swift in Sources */,
+				EAED9A2D2EE7B47E00A5FC08 /* StoragePrefixMigration.swift in Sources */,
+				EAED9A2E2EE7B47E00A5FC08 /* RemnantDataMigration.swift in Sources */,
+				EAED9A2F2EE7B47E00A5FC08 /* NetworkRequestEvent.swift in Sources */,
+				EAED9A302EE7B47E00A5FC08 /* BasePlugins.swift in Sources */,
+				EAED9A312EE7B47E00A5FC08 /* AnalyticsConnectorPlugin.swift in Sources */,
+				EAED9A322EE7B47E00A5FC08 /* SandboxHelper.swift in Sources */,
+				EAED9A332EE7B47E00A5FC08 /* AnalyticsConnectorIdentityPlugin.swift in Sources */,
+				EAED9A342EE7B47E00A5FC08 /* DefaultTrackingOptions.swift in Sources */,
+				EAED9A352EE7B47E00A5FC08 /* UIKitScreenViews.swift in Sources */,
+				EAED9A362EE7B47E00A5FC08 /* ElementInteractionEvent.swift in Sources */,
+				EAED9A372EE7B47E00A5FC08 /* ObjCAutocaptureOptions.swift in Sources */,
+				EAED9A382EE7B47E00A5FC08 /* ScreenViewedEvent.swift in Sources */,
+				EAED9A392EE7B47E00A5FC08 /* DeepLinkOpenedEvent.swift in Sources */,
+				EAED9A3A2EE7B47E00A5FC08 /* NetworkTrackingPlugin.swift in Sources */,
+				EAED9A3B2EE7B47E00A5FC08 /* ObjCNetworkTrackingOptions.swift in Sources */,
+				EAED9A3C2EE7B47E00A5FC08 /* ObjCConfiguration.swift in Sources */,
+				EAED9A3D2EE7B47E00A5FC08 /* ObjCPlan.swift in Sources */,
+				EAED9A3E2EE7B47E00A5FC08 /* Identity.swift in Sources */,
+				EAED9A3F2EE7B47E00A5FC08 /* ObjCIngestionMetadata.swift in Sources */,
+				EAED9A402EE7B47E00A5FC08 /* ObjCAcai.swift in Sources */,
+				EAED9A412EE7B47E00A5FC08 /* ObjCEventOptions.swift in Sources */,
+				EAED9A422EE7B47E00A5FC08 /* ObjCBaseEvent.swift in Sources */,
+				EAED9A432EE7B47E00A5FC08 /* ObjCTrackingOptions.swift in Sources */,
+				EAED9A442EE7B47E00A5FC08 /* ObjCIdentify.swift in Sources */,
+				EAED9A452EE7B47E00A5FC08 /* ObjCRevenue.swift in Sources */,
+				EAED9A462EE7B47E00A5FC08 /* ObjCPlugin.swift in Sources */,
+				EAED9A472EE7B47E00A5FC08 /* ObjCProperties.swift in Sources */,
+				EAED9A482EE7B47E00A5FC08 /* ObjCLoggerProvider.swift in Sources */,
+				EAED9A492EE7B47E00A5FC08 /* ObjCDefaultTrackingOptions.swift in Sources */,
+				EAED9A4A2EE7B47E00A5FC08 /* ObjCScreenViewedEvent.swift in Sources */,
+				EAED9A4B2EE7B47E00A5FC08 /* AutocaptureOptions.swift in Sources */,
+				EAED9A4C2EE7B47E00A5FC08 /* ObjCDeepLinkOpenedEvent.swift in Sources */,
+				EAED9A4D2EE7B47E00A5FC08 /* NetworkConnectivityCheckerPlugin.swift in Sources */,
+				EAED9A4E2EE7B47E00A5FC08 /* ObjCStorage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_142 /* AcaiTests.swift in Sources */,
+				OBJ_143 /* ConfigurationTests.swift in Sources */,
+				OBJ_144 /* ConsoleLoggerTests.swift in Sources */,
+				OBJ_145 /* BaseEventTests.swift in Sources */,
+				OBJ_146 /* GroupIdentifyEventTests.swift in Sources */,
+				OBJ_147 /* IdentifyEventTests.swift in Sources */,
+				OBJ_148 /* IdentifyTests.swift in Sources */,
+				BA9BEA4D299FB4BB00BC0F7C /* IdentifyInterceptorTests.swift in Sources */,
+				OBJ_149 /* RevenueEventTests.swift in Sources */,
+				OBJ_150 /* RevenueTests.swift in Sources */,
+				EA9D50F92E7342BD0037E925 /* NetworkTrackingPlugin+Extensions.swift in Sources */,
+				EAE891872DA83B6F00AB97D0 /* FakeURLProtocol.swift in Sources */,
+				OBJ_151 /* PersistentStorageTests.swift in Sources */,
+				4E654DE12D9B60E700BCAA85 /* IdentityTests.swift in Sources */,
+				OBJ_152 /* TestUtilities.swift in Sources */,
+				6C23EF162C38AD31000DC8C8 /* UIKitUserInteractionPluginTest.swift in Sources */,
+				OBJ_153 /* TimelineTests.swift in Sources */,
+				OBJ_154 /* TypesTests.swift in Sources */,
+				4ED02BBB2F29958D001AE863 /* GzipTests.swift in Sources */,
+				OBJ_155 /* EventPipelineTests.swift in Sources */,
+				3E281B8E2B96833D009D913B /* DiagnosticsTests.swift in Sources */,
+				4E27E4162DC1443F00799F24 /* AutocaptureRemoteConfigTests.swift in Sources */,
+				B6F338A32B685793006179E2 /* NetworkConnectivityCheckerPluginTests.swift in Sources */,
+				6C04FC482C589C8100EA8667 /* AutocaptureOptionsTests.swift in Sources */,
+				OBJ_156 /* HttpClientTests.swift in Sources */,
+				D01043612B6C5A8500F8173C /* SandboxHelperTests.swift in Sources */,
+				EAE4C5FC2E5FA0C700FCD6E4 /* ObjectFilterTests.swift in Sources */,
+				OBJ_157 /* PersistentStorageResponseHandlerTests.swift in Sources */,
+				4E05BB942BE41AEB009DE475 /* Acai+Extensions.swift in Sources */,
+				OBJ_158 /* UrlExtensionTests.swift in Sources */,
+				EAE989292DA831F200835345 /* NetworkTrackingPluginTest.swift in Sources */,
+				8EDEC4EE0DE1C89889F451B5 /* QueueTimeTests.swift in Sources */,
+				BA1EC0F62A9F63FD00C2D547 /* AcaiIOSTests.swift in Sources */,
+				4E5F89452F2AB9B60015FBC6 /* Data+Gzip.swift in Sources */,
+				8EDEC14255F82E24CEE00B36 /* AcaiSessionTests.swift in Sources */,
+				8EDEC972AEB33E4528F7FEEB /* StoragePrefixMigrationTests.swift in Sources */,
+				4E2B646B2BA127460010E6F8 /* UIKitScreenViewsPluginTests.swift in Sources */,
+				BA994B9A2A4F48DE00D0913F /* LegacyDatabaseStorageTests.swift in Sources */,
+				EA1F2CD92D8781950096A576 /* MethodSwizzlerTest.swift in Sources */,
+				8EDEC2E0CC80DF79F5463ACC /* RemnantDataMigrationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				EAF7B54B2E09446F00E6E61A /* FrustrationInteractions.swift in Sources */,
+				EA84CF0B2DF8D8E400CD1CAD /* MiscellaneousExtension.swift in Sources */,
+				OBJ_88 /* Acai.swift in Sources */,
+				OBJ_89 /* Configuration.swift in Sources */,
+				OBJ_90 /* ConsoleLogger.swift in Sources */,
+				OBJ_91 /* Constants.swift in Sources */,
+				EAE4C5FA2E5F76A400FCD6E4 /* ObjectFilter.swift in Sources */,
+				OBJ_93 /* BaseEvent.swift in Sources */,
+				EA2FD8932EECDD6F002AB27E /* AutocaptureManager.swift in Sources */,
+				OBJ_94 /* EventOptions.swift in Sources */,
+				OBJ_95 /* GroupIdentifyEvent.swift in Sources */,
+				OBJ_96 /* Identify.swift in Sources */,
+				OBJ_97 /* IdentifyEvent.swift in Sources */,
+				OBJ_98 /* Revenue.swift in Sources */,
+				OBJ_99 /* RevenueEvent.swift in Sources */,
+				OBJ_100 /* Mediator.swift in Sources */,
+				OBJ_101 /* AcaiDestinationPlugin.swift in Sources */,
+				OBJ_102 /* ContextPlugin.swift in Sources */,
+				OBJ_103 /* DestinationPlugin.swift in Sources */,
+				OBJ_104 /* IdentityEventSender.swift in Sources */,
+				OBJ_105 /* MacOSLifecycleMonitor.swift in Sources */,
+				OBJ_106 /* AppUtil.swift in Sources */,
+				OBJ_107 /* VendorSystem.swift in Sources */,
+				OBJ_108 /* IOSLifecycleMonitor.swift in Sources */,
+				OBJ_109 /* WatchOSLifecycleMonitor.swift in Sources */,
+				B6CCC6CD2B6B14510004B203 /* ObjCNetworkConnectivityCheckerPlugin.swift in Sources */,
+				OBJ_111 /* InMemoryStorage.swift in Sources */,
+				3E281B912B9BCC14009D913B /* DispatchQueueHolder.swift in Sources */,
+				B605396A2BB767390027FC24 /* DefaultEventUtils.swift in Sources */,
+				4ED02BB82F299298001AE863 /* Data+Gzip.swift in Sources */,
+				OBJ_112 /* PersistentStorage.swift in Sources */,
+				EA5C95942D7A76B900DC8B3B /* NetworkSwizzler.swift in Sources */,
+				BA9BEA4B299FB43B00BC0F7C /* IdentifyInterceptor.swift in Sources */,
+				BA0639F62A4DD491000F1CEE /* LegacyDatabaseStorage.swift in Sources */,
+				OBJ_113 /* Timeline.swift in Sources */,
+				OBJ_114 /* TrackingOptions.swift in Sources */,
+				OBJ_115 /* Types.swift in Sources */,
+				EAF7B5512E0CAEAE00E6E61A /* FrustrationIgnoreExtensions.swift in Sources */,
+				OBJ_116 /* Atomic.swift in Sources */,
+				EAF7B5582E0F1C1D00E6E61A /* ObjCInteractionsOptions.swift in Sources */,
+				EA5C95962D7A776D00DC8B3B /* MethodSwizzler.swift in Sources */,
+				EA28FDA42DED997900848BBB /* InteractionsOptions.swift in Sources */,
+				OBJ_117 /* CodableExtension.swift in Sources */,
+				OBJ_118 /* EventPipeline.swift in Sources */,
+				6C04FC412C58974A00EA8667 /* UIKitElementInteractions.swift in Sources */,
+				OBJ_119 /* HttpClient.swift in Sources */,
+				OBJ_120 /* OutputFileStream.swift in Sources */,
+				OBJ_121 /* PersistentStorageResponseHandler.swift in Sources */,
+				OBJ_122 /* QueueTimer.swift in Sources */,
+				OBJ_124 /* UrlExtension.swift in Sources */,
+				8EDECFCCF4219767F26210D6 /* Sessions.swift in Sources */,
+				3E281B8C2B967F19009D913B /* Diagonostics.swift in Sources */,
+				8EDECD602E181B3E2E85D4DF /* StoragePrefixMigration.swift in Sources */,
+				8EDEC8F8DD2CDCD6568512F8 /* RemnantDataMigration.swift in Sources */,
+				EA8DA4C12D91C131003B00F0 /* NetworkRequestEvent.swift in Sources */,
+				8EDEC977C03AA2676724F436 /* BasePlugins.swift in Sources */,
+				8EDEC1073A308B12B5CCD975 /* AnalyticsConnectorPlugin.swift in Sources */,
+				D010435F2B6C59EE00F8173C /* SandboxHelper.swift in Sources */,
+				8EDEC3283B812D5D34DADF7B /* AnalyticsConnectorIdentityPlugin.swift in Sources */,
+				8EDEC4D0C0CE07BF211804CC /* DefaultTrackingOptions.swift in Sources */,
+				8EDEC30C0075E9D92B1B5210 /* UIKitScreenViews.swift in Sources */,
+				6C04FC3F2C58973C00EA8667 /* ElementInteractionEvent.swift in Sources */,
+				6C04FC432C58976800EA8667 /* ObjCAutocaptureOptions.swift in Sources */,
+				8EDEC43FB30802F70112E577 /* ScreenViewedEvent.swift in Sources */,
+				8EDEC51F746CC25D27E32F6A /* DeepLinkOpenedEvent.swift in Sources */,
+				EA8DA4BF2D91C101003B00F0 /* NetworkTrackingPlugin.swift in Sources */,
+				EAF020772DBAE9D1003D22A2 /* ObjCNetworkTrackingOptions.swift in Sources */,
+				8EDECF81C2B1B38D472FD7EF /* ObjCConfiguration.swift in Sources */,
+				8EDECB800546E37719391E65 /* ObjCPlan.swift in Sources */,
+				4E654D682D97454900BCAA85 /* Identity.swift in Sources */,
+				8EDEC02B99EE2092B567A61D /* ObjCIngestionMetadata.swift in Sources */,
+				8EDEC98799DCB6610B8DBA19 /* ObjCAcai.swift in Sources */,
+				8EDECD1E851511887BE000F9 /* ObjCEventOptions.swift in Sources */,
+				8EDEC10C56FA7F7DEEB48B6F /* ObjCBaseEvent.swift in Sources */,
+				8EDECDF8E188CD7F24EEB475 /* ObjCTrackingOptions.swift in Sources */,
+				8EDECEC5F98F9974DF3E576F /* ObjCIdentify.swift in Sources */,
+				8EDECBA91C61037025B85EFA /* ObjCRevenue.swift in Sources */,
+				8EDECE3AA54253BA167E89CB /* ObjCPlugin.swift in Sources */,
+				8EDEC2155081F99515DF9C82 /* ObjCProperties.swift in Sources */,
+				8EDEC74C71FEC9056DC7358F /* ObjCLoggerProvider.swift in Sources */,
+				8EDECA4DAFA67CD4785D0161 /* ObjCDefaultTrackingOptions.swift in Sources */,
+				8EDEC43520B2DCF584F1035D /* ObjCScreenViewedEvent.swift in Sources */,
+				6C04FC452C58978900EA8667 /* AutocaptureOptions.swift in Sources */,
+				8EDECC1FC97DDF0BEFAA96E7 /* ObjCDeepLinkOpenedEvent.swift in Sources */,
+				B6EDB4D02B643C8400454B90 /* NetworkConnectivityCheckerPlugin.swift in Sources */,
+				8EDEC5F7208B1C327C8703D7 /* ObjCStorage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_161 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "acai-swift::Acai-Swift" /* Acai-Swift */;
+			targetProxy = 580FD1F0294A56F60036777B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EAED9A572EE7B47E00A5FC08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_MODULES_AUTOLINK = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Acai-Swift.xcodeproj/Acai_Swift_Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Acai-Swift";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx watchos watchsimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ACAI_DISABLE_UIKIT";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3,4,6,7";
+				TARGET_NAME = AcaiSwiftNoUIKit;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+				XROS_DEPLOYMENT_TARGET = 1.3;
+			};
+			name = Debug;
+		};
+		EAED9A592EE7B47E00A5FC08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_MODULES_AUTOLINK = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Acai-Swift.xcodeproj/Acai_Swift_Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Acai-Swift";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx watchos watchsimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ACAI_DISABLE_UIKIT";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3,4,6,7";
+				TARGET_NAME = AcaiSwiftNoUIKit;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+				XROS_DEPLOYMENT_TARGET = 1.3;
+			};
+			name = Release;
+		};
+		OBJ_139 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Acai-Swift.xcodeproj/Acai_SwiftTests_Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = "Acai-SwiftTests";
+				TVOS_DEPLOYMENT_TARGET = 14.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		OBJ_140 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Acai-Swift.xcodeproj/Acai_SwiftTests_Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = "Acai-SwiftTests";
+				TVOS_DEPLOYMENT_TARGET = 14.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "$(AVAILABLE_PLATFORMS)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "$(AVAILABLE_PLATFORMS)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Acai-Swift.xcodeproj/Acai_Swift_Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Acai-Swift";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx watchos watchsimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3,4,6,7";
+				TARGET_NAME = AcaiSwift;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+				XROS_DEPLOYMENT_TARGET = 1.3;
+			};
+			name = Debug;
+		};
+		OBJ_86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "Acai-Swift.xcodeproj/Acai_Swift_Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Acai-Swift";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx watchos watchsimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,3,4,6,7";
+				TARGET_NAME = AcaiSwift;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+				XROS_DEPLOYMENT_TARGET = 1.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAED9A562EE7B47E00A5FC08 /* Build configuration list for PBXNativeTarget "Acai-Swift-NoUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAED9A572EE7B47E00A5FC08 /* Debug */,
+				EAED9A592EE7B47E00A5FC08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_138 /* Build configuration list for PBXNativeTarget "Acai-SwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_139 /* Debug */,
+				OBJ_140 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "Acai-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_84 /* Build configuration list for PBXNativeTarget "Acai-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_85 /* Debug */,
+				OBJ_86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4E65A5382DA88C98004ED163 /* XCRemoteSwiftPackageReference "AmplitudeCore-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/amplitude/AmplitudeCore-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.1;
+			};
+		};
+		4EB530762CD2EB9700E961F4 /* XCRemoteSwiftPackageReference "analytics-connector-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/amplitude/analytics-connector-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4EB530742CD2E46A00E961F4 /* AnalyticsConnectorFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AnalyticsConnectorFramework;
+		};
+		EA2FD8852EE8A0E4002AB27E /* AmplitudeCoreFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E65A5382DA88C98004ED163 /* XCRemoteSwiftPackageReference "AmplitudeCore-Swift" */;
+			productName = AmplitudeCoreFramework;
+		};
+		EA2FD8872EE8A0EB002AB27E /* AmplitudeCoreNoUIKitFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E65A5382DA88C98004ED163 /* XCRemoteSwiftPackageReference "AmplitudeCore-Swift" */;
+			productName = AmplitudeCoreNoUIKitFramework;
+		};
+		EAED99F72EE7B47E00A5FC08 /* AnalyticsConnectorFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AnalyticsConnectorFramework;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
