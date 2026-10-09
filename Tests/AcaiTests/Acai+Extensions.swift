@@ -1,0 +1,23 @@
+//
+//  Acai+Extensions.swift
+//  Acai-SwiftTests
+//
+//  Created by Chris Leonavicius on 5/2/24.
+//
+
+@testable import AcaiSwift
+import XCTest
+
+extension Acai {
+
+    func waitForTrackingQueue() {
+        let waitForQueueExpectation = XCTestExpectation(description: "Wait for trackingQueue")
+        // Because trackingQueue is serial, this acts as a barrier in which any previous operations will
+        // have guaranteed to complete after this has run. 
+        trackingQueue.async {
+            waitForQueueExpectation.fulfill()
+        }
+
+        XCTWaiter().wait(for: [waitForQueueExpectation], timeout: 10)
+    }
+}
