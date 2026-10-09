@@ -1,0 +1,254 @@
+//
+//  ContentView.swift
+//  AcaiSwiftUIExample
+//
+//  Created by Hao Yu on 11/30/22.
+//
+
+@_spi(Internal)
+import AcaiSwift
+import AppTrackingTransparency
+import CoreData
+import SwiftUI
+
+let acaiColor = Color(red: 0.16, green: 0.46, blue: 0.87)
+
+struct ContentView: View {
+    @Environment(\.managedObjectContext) private var viewContext
+
+    @State var userId: String = ""
+    @State var deviceId: String = "xxx-xxx-xxx"
+    @State var eventType: String = ""
+    @State var productId: String = ""
+    @State var price: Double = 0.00
+    @State var quantity: Int = 1
+    @State var userPropertyKey = ""
+    @State var userPropertyValue = ""
+    @State var groupType = ""
+    @State var groupProperty = ""
+    @State var groupUserPropertyKey = ""
+    @State var groupUserPropertyValue = ""
+    @State var responseCode = "500"
+    @State var responseDelay = ""
+
+    @State var rageClickTest: Bool = false
+
+    var body: some View {
+        VStack {
+            LazyVStack {
+                Text("Acai Example")
+                    .bold()
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(acaiColor)
+                    .foregroundColor(.white)
+            }
+            VStack {
+                Form {
+                    Section(header: Text("IDENTITY")) {
+                        HStack {
+                            TextField("UserId", text: $userId)
+                            Button(action: {
+                                print("Set UserId")
+                                Acai.testInstance.setUserId(userId: userId)
+                            }) {
+                                Text("Set UserId")
+                            }.buttonStyle(AcaiButton())
+                        }
+                        HStack {
+                            TextField("DeviceId", text: $deviceId)
+                            Button(action: {
+                                print("Set DeviceId")
+                                Acai.testInstance.setDeviceId(deviceId: deviceId)
+                            }) {
+                                Text("Reset DeviceId")
+                            }.buttonStyle(AcaiButton())
+
+                        }
+                    }
+                    Section(header: Text("GENERAL EVENT")) {
+                        HStack {
+                            TextField("Event Name", text: $eventType)
+                            Button(action: {
+                                print("Send event")
+                                Acai.testInstance.track(eventType: eventType)
+                            }) {
+                                Text("Send Event")
+                            }.buttonStyle(AcaiButton())
+
+                        }
+                    }
+                    Section(header: Text("REVENUE EVENT")) {
+                        TextField("Product Id", text: $productId)
+                        TextField("Price", value: $price, formatter: decimalFormatter())
+                        TextField("Quantity", value: $quantity, formatter: NumberFormatter())
+                        Button(action: {
+                            print("Send revenue event")
+                            let revenue = Revenue()
+                            revenue.price = price
+                            revenue.quantity = quantity
+                            revenue.productId = productId
+                            revenue.currency = "CAD"
+                            Acai.testInstance.revenue(revenue: revenue)
+                        }) {
+                            Text("Send Revenue Event")
+                        }.buttonStyle(AcaiButton())
+                    }
+                    Section(header: Text("FILTERED EVENT")) {
+                        HStack {
+                            Button(action: {
+                                print("Send event")
+                                Acai.testInstance.track(eventType: "Filtered Event")
+                            }) {
+                                Text("Event Should Be Filtered")
+                            }.buttonStyle(AcaiButton())
+
+                        }
+                    }
+                    Section(header: Text("IDENTIFY")) {
+                        HStack {
+                            TextField("User Property Key", text: $userPropertyKey)
+                            TextField("User Property Value", text: $userPropertyValue)
+                        }
+                        Button(action: {
+                            print("Send identify event")
+                            let identify = Identify()
+                            identify.set(property: userPropertyKey, value: userPropertyValue)
+                            Acai.testInstance.identify(identify: identify)
+                        }) {
+                            Text("Send Identify Event")
+                        }.buttonStyle(AcaiButton())
+                    }
+                    Section(header: Text("GROUP IDENTIFY")) {
+                        HStack {
+                            TextField("Group Type", text: $groupType)
+                            TextField("Group Property", text: $groupProperty)
+                        }
+                        HStack {
+                            TextField("User Property Key", text: $groupUserPropertyKey)
+                            TextField("User Property Value", text: $groupUserPropertyValue)
+                        }
+                        Button(action: {
+                            print("Send groupIdentify event")
+                            let groupIdentify = Identify()
+                            groupIdentify.set(property: groupUserPropertyKey, value: groupUserPropertyValue)
+                            Acai.testInstance.groupIdentify(groupType: groupType, groupName: groupProperty, identify: groupIdentify)
+                        }) {
+                            Text("Send Group Identify Event")
+                        }.buttonStyle(AcaiButton())
+                    }
+                    Section(header: Text("NETWORK TRACKING TEST")) {
+                        HStack {
+                            TextField("Response Code", text: $responseCode)
+                                .keyboardType(.numberPad)
+                            TextField("Delay in ms", text: $responseDelay)
+                                .keyboardType(.numberPad)
+                        }
+                        HStack {
+                            Button(action: {
+                                requestGET(responseCode: responseCode, responseDelay: responseDelay)
+                            }) {
+                                Text("GET")
+                            }.buttonStyle(AcaiButton())
+                            Button(action: {
+                                requestPOST(responseCode: responseCode, responseDelay: responseDelay)
+                            }) {
+                                Text("POST")
+                            }.buttonStyle(AcaiButton())
+                        }
+                    }
+                    Section(header: Text("RAGE CLICK")) {
+                        HStack(spacing: 20) {
+                            Button("Tap Me") {
+                                print("Button tapped - this can trigger rage click detection")
+                            }.buttonStyle(AcaiButton())
+
+                            Toggle("Rage Click", isOn: $rageClickTest)
+                        }
+                    }
+                    Section(header: Text("Diagnostics")) {
+                        HStack(spacing: 20) {
+                            Button("Flush") {
+                                Task {
+                                    await Acai.testInstance.amplitudeContext.diagnosticsClient.flush()
+                                }
+                            }.buttonStyle(AcaiButton())
+                            Button("Crash!!") {
+                                print("Crash tapped - this can trigger a crash")
+                                let x = [1,2,3]
+                                print(x[99])
+                            }.buttonStyle(AcaiButton())
+                        }
+                    }
+                    Button(action: {
+                        Acai.testInstance.flush()
+                    }) {
+                        Text("Flush All Events")
+                            .frame(maxWidth: .infinity)
+                    }.buttonStyle(AcaiButton())
+                }
+            }
+        }
+    }
+}
+
+func decimalFormatter() -> NumberFormatter {
+    let decimalFormatter = NumberFormatter()
+    decimalFormatter.numberStyle = .decimal
+    decimalFormatter.minimumFractionDigits = 2
+    return decimalFormatter
+}
+
+struct AcaiButton: ButtonStyle {
+    func makeBody(configuration: Self.Configuration) -> some View {
+        configuration.label
+            .padding(8)
+            .background(acaiColor)
+            .foregroundColor(.white)
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    }
+}
+
+func requestGET(responseCode: String, responseDelay: String) {
+    let responseDelay = responseDelay.isEmpty ? "0" : responseDelay
+    let url = URL(string: "https://httpbin.org/status/\(responseCode)?sleep=\(responseDelay)#test")
+    var request = URLRequest(url: url!)
+    request.setValue("application/json", forHTTPHeaderField: "Accept")
+    let configuration = URLSessionConfiguration.default
+    configuration.timeoutIntervalForRequest = 3
+    let session = URLSession(configuration: configuration)
+    let task = session.dataTask(with: request) { data, response, error in
+        print("Response: \(String(describing: response))")
+        if let error = error {
+            print("Error: \(error)")
+        }
+    }
+    task.resume()
+    print("Request sent: \(String(describing: url))")
+}
+
+func requestPOST(responseCode: String, responseDelay: String) {
+    let url = URL(string: "https://httpbin.org/status/\(responseCode)")
+    var request = URLRequest(url: url!)
+    request.setValue("application/json", forHTTPHeaderField: "Accept")
+    request.httpMethod = "POST"
+    let body: [String : Any] = ["test": 0, "query": "a query string", "keyBool": true, "keyNull": NSNull(), "keyArray": [1, 2, 3], "keyDictionary": ["a": ["c": ["e": 5]], "b": "bbbbb"], "keyMix": ["a", ["c": ["e": 5]]]]
+//    let body: [Any] = [["query": "query 1", "other": "other value"], ["query": "query 2", "other": "other value 2"]]
+    request.httpBody = try? JSONSerialization.data(withJSONObject: body, options: [])
+    let configuration = URLSessionConfiguration.default
+    configuration.timeoutIntervalForRequest = 3
+    let session = URLSession(configuration: configuration)
+    let task = session.dataTask(with: request) { data, response, error in
+        print("Response: \(String(describing: response))")
+        if let error = error {
+            print("Error: \(error)")
+        }
+    }
+    task.resume()
+    print("Request sent: \(String(describing: url))")
+}
